@@ -1,0 +1,514 @@
+fileFormatVersion: 2
+guid: b361cc9f42840554590bdc8ea7f7b119
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7649547507937914769
+    second: ENEMY_WALKING2_0
+  - first:
+      213: -6286740115715780411
+    second: ENEMY_WALKING2_1
+  - first:
+      213: 3591779358069688602
+    second: ENEMY_WALKING2_2
+  - first:
+      213: 8537242134690217391
+    second: ENEMY_WALKING2_3
+  - first:
+      213: 434034054422739557
+    second: ENEMY_WALKING2_4
+  - first:
+      213: -6598486794401539897
+    second: ENEMY_WALKING2_5
+  - first:
+      213: -480962021507316592
+    second: ENEMY_WALKING2_6
+  - first:
+      213: 114667140258760054
+    second: ENEMY_WALKING2_7
+  - first:
+      213: 7805494256975084136
+    second: ENEMY_WALKING2_8
+  - first:
+      213: -7116606032432454388
+    second: ENEMY_WALKING2_9
+  - first:
+      213: -5933476642765397916
+    second: ENEMY_WALKING2_10
+  - first:
+      213: 3708234463498715743
+    second: ENEMY_WALKING2_11
+  - first:
+      213: 5932301212140188159
+    second: ENEMY_WALKING2_12
+  - first:
+      213: -3375480591541509940
+    second: ENEMY_WALKING2_13
+  - first:
+      213: 4229597054474726102
+    second: ENEMY_WALKING2_14
+  - first:
+      213: -2928154526131529967
+    second: ENEMY_WALKING2_15
+  - first:
+      213: 72534518200791668
+    second: ENEMY_WALKING2_16
+  - first:
+      213: -2032932411027631908
+    second: ENEMY_WALKING2_17
+  - first:
+      213: 6206284031509743597
+    second: ENEMY_WALKING2_18
+  - first:
+      213: 6227736926575241263
+    second: ENEMY_WALKING2_19
+  - first:
+      213: -8121253000383296592
+    second: ENEMY_WALKING2_20
+  - first:
+      213: 868320635474264522
+    second: ENEMY_WALKING2_21
+  - first:
+      213: -1469019560785506928
+    second: ENEMY_WALKING2_22
+  - first:
+      213: -6207085419304069656
+    second: ENEMY_WALKING2_23
+  - first:
+      213: -217739963847202379
+    second: ENEMY_WALKING2_24
+  - first:
+      213: -7957713105008630839
+    second: ENEMY_WALKING2_25
+  - first:
+      213: -3327204130362713038
+    second: ENEMY_WALKING2_26
+  - first:
+      213: -5127395159493875867
+    second: ENEMY_WALKING2_27
+  - first:
+      213: -6053800263588635489
+    second: ENEMY_WALKING2_28
+  - first:
+      213: 3941291031449889920
+    second: ENEMY_WALKING2_29
+  - first:
+      213: -7594379449347286541
+    second: ENEMY_WALKING2_30
+  - first:
+      213: -7664007425679775388
+    second: ENEMY_WALKING2_31
+  - first:
+      213: 5362618287865128604
+    second: ENEMY_WALKING2_32
+  - first:
+      213: 4878545323555461685
+    second: ENEMY_WALKING2_33
+  - first:
+      213: -8310433395468801326
+    second: ENEMY_WALKING2_34
+  - first:
+      213: 2744295282735626498
+    second: ENEMY_WALKING2_35
+  - first:
+      213: -5893845502529339792
+    second: ENEMY_WALKING2_36
+  - first:
+      213: 8639174976778747575
+    second: ENEMY_WALKING2_37
+  - first:
+      213: -7574368374246718683
+    second: ENEMY_WALKING2_38
+  - first:
+      213: 582466739490746490
+    second: ENEMY_WALKING2_39
+  - first:
+      213: 1183298465693979580
+    second: ENEMY_WALKING2_40
+  - first:
+      213: -5798331614072509142
+    second: ENEMY_WALKING2_41
+  - first:
+      213: 5064242508182923051
+    second: ENEMY_WALKING2_42
+  - first:
+      213: -55821864902173297
+    second: ENEMY_WALKING2_43
+  - first:
+      213: -4324104984032630111
+    second: ENEMY_WALKING2_44
+  - first:
+      213: 4397674225676756268
+    second: ENEMY_WALKING2_45
+  - first:
+      213: 5941594517994107633
+    second: ENEMY_WALKING2_46
+  - first:
+      213: 8064559456419829122
+    second: ENEMY_WALKING2_47
+  - first:
+      213: 2414496356737391680
+    second: ENEMY_WALKING2_48
+  - first:
+      213: -4852536944929544843
+    second: ENEMY_WALKING2_49
+  - first:
+      213: 6623423732860863233
+    second: ENEMY_WALKING2_50
+  - first:
+      213: 8855227100745666148
+    second: ENEMY_WALKING2_51
+  - first:
+      213: 8061882973135117227
+    second: ENEMY_WALKING2_52
+  - first:
+      213: 8952461873026737628
+    second: ENEMY_WALKING2_53
+  - first:
+      213: -7607683121789655630
+    second: ENEMY_WALKING2_54
+  - first:
+      213: 7569204549309854026
+    second: ENEMY_WALKING2_55
+  - first:
+      213: -8781729264104198974
+    second: ENEMY_WALKING2_56
+  - first:
+      213: 8386815703774089969
+    second: ENEMY_WALKING2_57
+  - first:
+      213: -6500289248068416793
+    second: ENEMY_WALKING2_58
+  - first:
+      213: -436421343301745771
+    second: ENEMY_WALKING2_59
+  - first:
+      213: -4990311356161448151
+    second: ENEMY_WALKING2_60
+  - first:
+      213: 7928753252459831246
+    second: ENEMY_WALKING2_61
+  - first:
+      213: -6195586478006768839
+    second: ENEMY_WALKING2_62
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 72
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ENEMY_WALKING2_29
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 77
+        width: 385
+        height: 620
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ce00eaf4742b630800000000000000
+      internalID: 3941291031449889920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING2_32
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 40
+        width: 389
+        height: 619
+      alignment: 9
+      pivot: {x: 0.50000066, y: 0.54882985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96e632abe8db6a40800000000000000
+      internalID: 5362618287865128604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING2_39
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 40
+        width: 389
+        height: 615
+      alignment: 9
+      pivot: {x: 0.5, y: 0.54914737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7073dcd966551800800000000000000
+      internalID: 582466739490746490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING2_42
+      rect:
+        serializedVersion: 2
+        x: 3216
+        y: 45
+        width: 381
+        height: 609
+      alignment: 9
+      pivot: {x: 0.49118593, y: 0.55514646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b272daccabdc74640800000000000000
+      internalID: 5064242508182923051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING2_43
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 33
+        width: 382
+        height: 616
+      alignment: 9
+      pivot: {x: 0.50000006, y: 0.55451953}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d5ec34f4ea93ff0800000000000000
+      internalID: -55821864902173297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING2_50
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 45
+        width: 389
+        height: 606
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5387936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103401aeac02beb50800000000000000
+      internalID: 6623423732860863233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING2_52
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 45
+        width: 389
+        height: 606
+      alignment: 9
+      pivot: {x: 0.50000066, y: 0.5443354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab1d72b9df81ef60800000000000000
+      internalID: 8061882973135117227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING2_54
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 45
+        width: 389
+        height: 606
+      alignment: 9
+      pivot: {x: 0.5086347, y: 0.5498774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b52ef902841c6690800000000000000
+      internalID: -7607683121789655630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING2_56
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 45
+        width: 379
+        height: 601
+      alignment: 9
+      pivot: {x: 0.4822779, y: 0.55029225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccaa6b03c7012680800000000000000
+      internalID: -8781729264104198974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING2_57
+      rect:
+        serializedVersion: 2
+        x: 3661
+        y: 40
+        width: 391
+        height: 606
+      alignment: 9
+      pivot: {x: 0.5000006, y: 0.5554192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f25f148274f36470800000000000000
+      internalID: 8386815703774089969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

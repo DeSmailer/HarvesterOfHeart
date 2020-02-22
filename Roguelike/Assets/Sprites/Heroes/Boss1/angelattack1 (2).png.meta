@@ -1,0 +1,409 @@
+fileFormatVersion: 2
+guid: 17f9ebbb6d73e8144a80dd810da4a37d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9004714436304340483
+    second: angelattack1 (2)_0
+  - first:
+      213: -6154295457575551787
+    second: angelattack1 (2)_1
+  - first:
+      213: 5649449712976024522
+    second: angelattack1 (2)_2
+  - first:
+      213: 6694653570795165183
+    second: angelattack1 (2)_3
+  - first:
+      213: 2737400854750734697
+    second: angelattack1 (2)_4
+  - first:
+      213: -1908887878027178736
+    second: angelattack1 (2)_5
+  - first:
+      213: -6146654447373659521
+    second: angelattack1 (2)_6
+  - first:
+      213: -2098695305725309314
+    second: angelattack1 (2)_7
+  - first:
+      213: 4402349788939559577
+    second: angelattack1 (2)_8
+  - first:
+      213: 3790202038335600310
+    second: angelattack1 (2)_9
+  - first:
+      213: -8409469036832846635
+    second: angelattack1 (2)_10
+  - first:
+      213: 5604248850917139743
+    second: angelattack1 (2)_11
+  - first:
+      213: -170282458184280250
+    second: angelattack1 (2)_12
+  - first:
+      213: -6566451710852090257
+    second: angelattack1 (2)_13
+  - first:
+      213: -5274373666355377303
+    second: angelattack1 (2)_14
+  - first:
+      213: 8569901646575282514
+    second: angelattack1 (2)_15
+  - first:
+      213: -5160880866356830309
+    second: angelattack1 (2)_16
+  - first:
+      213: -4495407247358527844
+    second: angelattack1 (2)_17
+  - first:
+      213: -2295200089028815000
+    second: angelattack1 (2)_18
+  - first:
+      213: -7699808687965819719
+    second: angelattack1 (2)_19
+  - first:
+      213: -3598205002446387081
+    second: angelattack1 (2)_20
+  - first:
+      213: 6225725797022701701
+    second: angelattack1 (2)_21
+  - first:
+      213: 7541684960160781143
+    second: angelattack1 (2)_22
+  - first:
+      213: 1103037680603299592
+    second: angelattack1 (2)_23
+  - first:
+      213: -7558892228490094595
+    second: angelattack1 (2)_24
+  - first:
+      213: 7833102800390839006
+    second: angelattack1 (2)_25
+  - first:
+      213: 5117403204459887211
+    second: angelattack1 (2)_26
+  - first:
+      213: -7255817800007293220
+    second: angelattack1 (2)_27
+  - first:
+      213: 2643047072289392752
+    second: angelattack1 (2)_28
+  - first:
+      213: -6107722886218673816
+    second: angelattack1 (2)_29
+  - first:
+      213: 2521605799408226820
+    second: angelattack1 (2)_30
+  - first:
+      213: 5513569003978565798
+    second: angelattack1 (2)_31
+  - first:
+      213: 2175451821815652685
+    second: angelattack1 (2)_32
+  - first:
+      213: -4316879343871765064
+    second: angelattack1 (2)_0
+  - first:
+      213: -7988435225194328182
+    second: angelattack1 (2)_1
+  - first:
+      213: 1858798870299340841
+    second: angelattack1 (2)_2
+  - first:
+      213: -2231147203766454751
+    second: angelattack1 (2)_3
+  - first:
+      213: 5630836717522439556
+    second: angelattack1 (2)_4
+  - first:
+      213: -4590323253539679541
+    second: angelattack1 (2)_5
+  - first:
+      213: 5442157383550863559
+    second: angelattack1 (2)_6
+  - first:
+      213: 3885268680978027090
+    second: angelattack1 (2)_7
+  - first:
+      213: 3991487592853547227
+    second: angelattack1 (2)_8
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: angelattack1 (2)_0
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0
+        width: 373
+        height: 900
+      alignment: 9
+      pivot: {x: 0.36039966, y: 0.86819106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b55d4acb1d5714c0800000000000000
+      internalID: -4316879343871765064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angelattack1 (2)_1
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 0
+        width: 373
+        height: 900
+      alignment: 9
+      pivot: {x: 0.51314205, y: 0.8703769}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f031bbc70632190800000000000000
+      internalID: -7988435225194328182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angelattack1 (2)_3
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 0
+        width: 373
+        height: 900
+      alignment: 9
+      pivot: {x: 0.46714443, y: 0.85676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126f4e5707f5901e0800000000000000
+      internalID: -2231147203766454751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angelattack1 (2)_4
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 0
+        width: 373
+        height: 900
+      alignment: 9
+      pivot: {x: 0.58542436, y: 0.8540367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dc6204920c42e40800000000000000
+      internalID: 5630836717522439556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angelattack1 (2)_5
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 0
+        width: 373
+        height: 900
+      alignment: 9
+      pivot: {x: 0.5197132, y: 0.88944036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc25d8c4255eb40c0800000000000000
+      internalID: -4590323253539679541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angelattack1 (2)_6
+      rect:
+        serializedVersion: 2
+        x: 2043
+        y: 0
+        width: 373
+        height: 900
+      alignment: 9
+      pivot: {x: 0.48685765, y: 0.8785469}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8815a7e4d668b40800000000000000
+      internalID: 5442157383550863559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angelattack1 (2)_7
+      rect:
+        serializedVersion: 2
+        x: 2459
+        y: 0
+        width: 373
+        height: 900
+      alignment: 9
+      pivot: {x: 0.48028678, y: 0.8839937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25255a2c74f3be530800000000000000
+      internalID: 3885268680978027090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angelattack1 (2)_8
+      rect:
+        serializedVersion: 2
+        x: 2834
+        y: 0
+        width: 373
+        height: 900
+      alignment: 9
+      pivot: {x: 0.572282, y: 0.88944036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd82a6161dc946730800000000000000
+      internalID: 3991487592853547227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

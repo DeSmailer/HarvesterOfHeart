@@ -1,0 +1,514 @@
+fileFormatVersion: 2
+guid: 66b35b963c1cb4d409183340e6137073
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2461430929770726014
+    second: ENEMY_WALKING (3)_0
+  - first:
+      213: -6655004290460267509
+    second: ENEMY_WALKING (3)_1
+  - first:
+      213: -5923585588548155124
+    second: ENEMY_WALKING (3)_2
+  - first:
+      213: -1010367937354963228
+    second: ENEMY_WALKING (3)_3
+  - first:
+      213: 5026664058917004861
+    second: ENEMY_WALKING (3)_4
+  - first:
+      213: 7160271262124376347
+    second: ENEMY_WALKING (3)_5
+  - first:
+      213: 7686205145475342833
+    second: ENEMY_WALKING (3)_6
+  - first:
+      213: -5873650366101566481
+    second: ENEMY_WALKING (3)_7
+  - first:
+      213: 8359472786702028024
+    second: ENEMY_WALKING (3)_8
+  - first:
+      213: -959730627332042690
+    second: ENEMY_WALKING (3)_9
+  - first:
+      213: 9028706637891208498
+    second: ENEMY_WALKING (3)_10
+  - first:
+      213: 6920851736762886989
+    second: ENEMY_WALKING (3)_11
+  - first:
+      213: 8742990971527976815
+    second: ENEMY_WALKING (3)_12
+  - first:
+      213: 6819450409896849753
+    second: ENEMY_WALKING (3)_13
+  - first:
+      213: 8882507731543888615
+    second: ENEMY_WALKING (3)_14
+  - first:
+      213: -6169916732682540906
+    second: ENEMY_WALKING (3)_15
+  - first:
+      213: -8519871914037491136
+    second: ENEMY_WALKING (3)_16
+  - first:
+      213: 5610517982863522550
+    second: ENEMY_WALKING (3)_17
+  - first:
+      213: 8264323430488899396
+    second: ENEMY_WALKING (3)_18
+  - first:
+      213: 6802653561138252653
+    second: ENEMY_WALKING (3)_19
+  - first:
+      213: 5693066213329134242
+    second: ENEMY_WALKING (3)_20
+  - first:
+      213: 8282488082440972119
+    second: ENEMY_WALKING (3)_21
+  - first:
+      213: -4015713196580836445
+    second: ENEMY_WALKING (3)_22
+  - first:
+      213: -7588947063919352009
+    second: ENEMY_WALKING (3)_23
+  - first:
+      213: -1922546227180408720
+    second: ENEMY_WALKING (3)_24
+  - first:
+      213: -1451047723846091805
+    second: ENEMY_WALKING (3)_25
+  - first:
+      213: -6199636358227640434
+    second: ENEMY_WALKING (3)_26
+  - first:
+      213: -4382594371100216966
+    second: ENEMY_WALKING (3)_27
+  - first:
+      213: -1761888393104467809
+    second: ENEMY_WALKING (3)_28
+  - first:
+      213: 8149792164893684438
+    second: ENEMY_WALKING (3)_29
+  - first:
+      213: -3276812410689030350
+    second: ENEMY_WALKING (3)_30
+  - first:
+      213: 4863532939583008229
+    second: ENEMY_WALKING (3)_31
+  - first:
+      213: 1378977950466296468
+    second: ENEMY_WALKING (3)_32
+  - first:
+      213: 1534592057871898742
+    second: ENEMY_WALKING (3)_33
+  - first:
+      213: 6033620327109562879
+    second: ENEMY_WALKING (3)_34
+  - first:
+      213: -5379423451801112759
+    second: ENEMY_WALKING (3)_35
+  - first:
+      213: 2409682054486991099
+    second: ENEMY_WALKING (3)_36
+  - first:
+      213: -8250755097889610587
+    second: ENEMY_WALKING (3)_37
+  - first:
+      213: 4843810257474109341
+    second: ENEMY_WALKING (3)_38
+  - first:
+      213: -1993472970792596233
+    second: ENEMY_WALKING (3)_39
+  - first:
+      213: -4758834845411568621
+    second: ENEMY_WALKING (3)_40
+  - first:
+      213: 2836675614864454988
+    second: ENEMY_WALKING (3)_41
+  - first:
+      213: 6671258756848741696
+    second: ENEMY_WALKING (3)_42
+  - first:
+      213: 8276321943837549093
+    second: ENEMY_WALKING (3)_43
+  - first:
+      213: 7072154407920889666
+    second: ENEMY_WALKING (3)_44
+  - first:
+      213: 1559217113637527856
+    second: ENEMY_WALKING (3)_45
+  - first:
+      213: 132217018685472148
+    second: ENEMY_WALKING (3)_46
+  - first:
+      213: -9040216396082582593
+    second: ENEMY_WALKING (3)_47
+  - first:
+      213: -7128628489108920173
+    second: ENEMY_WALKING (3)_48
+  - first:
+      213: 3554909813245438911
+    second: ENEMY_WALKING (3)_49
+  - first:
+      213: 4122835182716296934
+    second: ENEMY_WALKING (3)_50
+  - first:
+      213: 2153022876929239875
+    second: ENEMY_WALKING (3)_51
+  - first:
+      213: 2520626709874643621
+    second: ENEMY_WALKING (3)_52
+  - first:
+      213: -2468071908686806721
+    second: ENEMY_WALKING (3)_53
+  - first:
+      213: 5545828499287977884
+    second: ENEMY_WALKING (3)_54
+  - first:
+      213: -2700716155932149799
+    second: ENEMY_WALKING (3)_55
+  - first:
+      213: -8797734660526137811
+    second: ENEMY_WALKING (3)_56
+  - first:
+      213: -7347954403831670013
+    second: ENEMY_WALKING (3)_57
+  - first:
+      213: 97169225310950895
+    second: ENEMY_WALKING (3)_58
+  - first:
+      213: -8752521125913866817
+    second: ENEMY_WALKING (3)_59
+  - first:
+      213: -6238220878765362377
+    second: ENEMY_WALKING (3)_60
+  - first:
+      213: -1035887496972106596
+    second: ENEMY_WALKING (3)_61
+  - first:
+      213: 91350260898948573
+    second: ENEMY_WALKING (3)_62
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 72
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ENEMY_WALKING (3)_32
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 40
+        width: 389
+        height: 619
+      alignment: 9
+      pivot: {x: 0.5000003, y: 0.5651064}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ac3aac32d132310800000000000000
+      internalID: 1378977950466296468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING (3)_36
+      rect:
+        serializedVersion: 2
+        x: 3665
+        y: 40
+        width: 385
+        height: 620
+      alignment: 9
+      pivot: {x: 0.50872374, y: 0.55958474}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0a45fbf09e07120800000000000000
+      internalID: 2409682054486991099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING (3)_39
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 45
+        width: 381
+        height: 609
+      alignment: 9
+      pivot: {x: 0.50881535, y: 0.5827193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc809a15e2c554e0800000000000000
+      internalID: -1993472970792596233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING (3)_40
+      rect:
+        serializedVersion: 2
+        x: 3181
+        y: 40
+        width: 389
+        height: 615
+      alignment: 9
+      pivot: {x: 0.50000066, y: 0.5546082}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3141e76ebe835fdb0800000000000000
+      internalID: -4758834845411568621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING (3)_43
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 48
+        width: 389
+        height: 606
+      alignment: 9
+      pivot: {x: 0.5086337, y: 0.5609615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522253545f66bd270800000000000000
+      internalID: 8276321943837549093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING (3)_45
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 45
+        width: 389
+        height: 606
+      alignment: 9
+      pivot: {x: 0.5000003, y: 0.5775869}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031231a24b373a510800000000000000
+      internalID: 1559217113637527856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING (3)_47
+      rect:
+        serializedVersion: 2
+        x: 2284
+        y: 45
+        width: 389
+        height: 606
+      alignment: 9
+      pivot: {x: 0.50863403, y: 0.5665031}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbe5dab513ba8280800000000000000
+      internalID: -9040216396082582593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING (3)_52
+      rect:
+        serializedVersion: 2
+        x: 4144
+        y: 33
+        width: 382
+        height: 616
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57632756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2907543a01bf220800000000000000
+      internalID: 2520626709874643621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING (3)_56
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 50
+        width: 391
+        height: 606
+      alignment: 9
+      pivot: {x: 0.4828218, y: 0.57758695}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e923b40fa28e580800000000000000
+      internalID: -8797734660526137811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ENEMY_WALKING (3)_60
+      rect:
+        serializedVersion: 2
+        x: 2738
+        y: 42
+        width: 379
+        height: 601
+      alignment: 9
+      pivot: {x: 0.4911388, y: 0.56146824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733f3ca89236d69a0800000000000000
+      internalID: -6238220878765362377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

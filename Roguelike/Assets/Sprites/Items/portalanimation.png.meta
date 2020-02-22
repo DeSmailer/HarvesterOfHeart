@@ -1,0 +1,358 @@
+fileFormatVersion: 2
+guid: e963f78b5bbe2cc4ebce7fb7068852f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4262579020012485355
+    second: portalanimation_0
+  - first:
+      213: 3798107442544817617
+    second: portalanimation_1
+  - first:
+      213: -6018102756649571165
+    second: portalanimation_2
+  - first:
+      213: 8642114762312289641
+    second: portalanimation_3
+  - first:
+      213: -9151864745121514694
+    second: portalanimation_4
+  - first:
+      213: 536954179654507015
+    second: portalanimation_5
+  - first:
+      213: -4860436818156826671
+    second: portalanimation_6
+  - first:
+      213: 3377973242596658760
+    second: portalanimation_7
+  - first:
+      213: -4451784569263611282
+    second: portalanimation_8
+  - first:
+      213: -6296455248558901276
+    second: portalanimation_0
+  - first:
+      213: 7349714270766863386
+    second: portalanimation_1
+  - first:
+      213: -6119221403797704050
+    second: portalanimation_2
+  - first:
+      213: -4969568285389191352
+    second: portalanimation_3
+  - first:
+      213: -7854460219147209907
+    second: portalanimation_4
+  - first:
+      213: 5113121626087659498
+    second: portalanimation_5
+  - first:
+      213: -531092466009941570
+    second: portalanimation_6
+  - first:
+      213: 3145960119420950531
+    second: portalanimation_7
+  - first:
+      213: 2482074243752810593
+    second: portalanimation_8
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 270
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: portalanimation_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 289
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7b08dbf4f7e98a0800000000000000
+      internalID: -6296455248558901276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalanimation_1
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 0
+        width: 288
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a149da5503e6ff560800000000000000
+      internalID: 7349714270766863386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalanimation_2
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 0
+        width: 288
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82bba4ed88241ba0800000000000000
+      internalID: -6119221403797704050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalanimation_3
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 0
+        width: 290
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847845e69fb880bb0800000000000000
+      internalID: -4969568285389191352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalanimation_4
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 0
+        width: 288
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d433b4f9b0a5ff290800000000000000
+      internalID: -7854460219147209907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalanimation_5
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 0
+        width: 288
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae79258470575f640800000000000000
+      internalID: 5113121626087659498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalanimation_6
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 0
+        width: 288
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9579c473e21a8f0800000000000000
+      internalID: -531092466009941570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalanimation_7
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 0
+        width: 289
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30891a38f02b8ab20800000000000000
+      internalID: 3145960119420950531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalanimation_8
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 0
+        width: 289
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1685805cf59127220800000000000000
+      internalID: 2482074243752810593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

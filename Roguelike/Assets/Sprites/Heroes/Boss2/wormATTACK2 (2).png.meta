@@ -1,0 +1,280 @@
+fileFormatVersion: 2
+guid: 459f83c9fb92d2e409451d8ef508c7d8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3489371012756560149
+    second: wormATTACK2 (2)_0
+  - first:
+      213: -2876563766220668724
+    second: wormATTACK2 (2)_1
+  - first:
+      213: 7258654946629711937
+    second: wormATTACK2 (2)_2
+  - first:
+      213: 4014177527670170805
+    second: wormATTACK2 (2)_3
+  - first:
+      213: -2319565264184519280
+    second: wormATTACK2 (2)_4
+  - first:
+      213: 1176623552048956335
+    second: wormATTACK2 (2)_5
+  - first:
+      213: -2093632828196321702
+    second: wormATTACK2 (2)_6
+  - first:
+      213: 6849751382158464938
+    second: wormATTACK2 (2)_7
+  - first:
+      213: -31873316936913063
+    second: wormATTACK2 (2)_8
+  - first:
+      213: 1576968716076220498
+    second: wormATTACK2 (2)_9
+  - first:
+      213: 2372836733411147482
+    second: wormATTACK2 (2)_10
+  - first:
+      213: -4787781386246431190
+    second: wormATTACK2 (2)_11
+  - first:
+      213: 2719392711583758743
+    second: wormATTACK2 (2)_12
+  - first:
+      213: 7749084027334970571
+    second: wormATTACK2 (2)_13
+  - first:
+      213: 4729075563503381205
+    second: wormATTACK2 (2)_14
+  - first:
+      213: 5869603322758235615
+    second: wormATTACK2 (2)_15
+  - first:
+      213: -5712987763266308582
+    second: wormATTACK2 (2)_16
+  - first:
+      213: 3967471067676760431
+    second: wormATTACK2 (2)_17
+  - first:
+      213: -8719865175064098886
+    second: wormATTACK2 (2)_18
+  - first:
+      213: 4894625782483499745
+    second: wormATTACK2 (2)_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wormATTACK2 (2)_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 0
+        width: 429
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51956e8d27cbc6030800000000000000
+      internalID: 3489371012756560149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wormATTACK2 (2)_1
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 0
+        width: 432
+        height: 600
+      alignment: 9
+      pivot: {x: 0.5023338, y: 0.4999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc048acce746418d0800000000000000
+      internalID: -2876563766220668724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wormATTACK2 (2)_2
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 0
+        width: 433
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148fef8473cebb460800000000000000
+      internalID: 7258654946629711937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wormATTACK2 (2)_3
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 0
+        width: 431
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4e222813935b730800000000000000
+      internalID: 4014177527670170805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wormATTACK2 (2)_5
+      rect:
+        serializedVersion: 2
+        x: 2516
+        y: 0
+        width: 460
+        height: 600
+      alignment: 9
+      pivot: {x: 0.5049207, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa38c36f2e4345010800000000000000
+      internalID: 1176623552048956335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

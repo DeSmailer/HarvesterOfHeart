@@ -1,0 +1,553 @@
+fileFormatVersion: 2
+guid: 669caf9a80e64df48a167c46c6fce34a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -275599363717068741
+    second: SCROLL1_0
+  - first:
+      213: 8954454647615222053
+    second: SCROLL1_1
+  - first:
+      213: -7738156404606500319
+    second: SCROLL1_2
+  - first:
+      213: 7612102960381975929
+    second: SCROLL1_3
+  - first:
+      213: -7311076265793368458
+    second: SCROLL1_4
+  - first:
+      213: -6610020613876726870
+    second: SCROLL1_5
+  - first:
+      213: 6720751251255682590
+    second: SCROLL1_6
+  - first:
+      213: 6179356763559691566
+    second: SCROLL1_7
+  - first:
+      213: 2174078401170919759
+    second: SCROLL1_8
+  - first:
+      213: -8412859327038697420
+    second: SCROLL1_9
+  - first:
+      213: -1905938232357578868
+    second: SCROLL1_10
+  - first:
+      213: -4491993394274377718
+    second: SCROLL1_11
+  - first:
+      213: -3437540643985866701
+    second: SCROLL1_12
+  - first:
+      213: -1637846715647147975
+    second: SCROLL1_13
+  - first:
+      213: -6847666951341179304
+    second: SCROLL1_14
+  - first:
+      213: 171109054371595929
+    second: SCROLL1_15
+  - first:
+      213: 7341857868610509419
+    second: SCROLL1_16
+  - first:
+      213: 2052529172055787204
+    second: SCROLL1_17
+  - first:
+      213: 4746107205200651036
+    second: SCROLL1_18
+  - first:
+      213: 7156838868539359412
+    second: SCROLL1_19
+  - first:
+      213: -6678710932476256296
+    second: SCROLL1_20
+  - first:
+      213: -274546814533380602
+    second: SCROLL1_21
+  - first:
+      213: -7873667353796077416
+    second: SCROLL1_22
+  - first:
+      213: 8024693737674859085
+    second: SCROLL1_23
+  - first:
+      213: 6596783347974845166
+    second: SCROLL1_24
+  - first:
+      213: -2956355398754213874
+    second: SCROLL1_25
+  - first:
+      213: 400706478660512525
+    second: SCROLL1_26
+  - first:
+      213: -4706807574784349519
+    second: SCROLL1_27
+  - first:
+      213: 1097981072455427099
+    second: SCROLL1_28
+  - first:
+      213: -2738569397530000552
+    second: SCROLL1_29
+  - first:
+      213: -2905641718306827272
+    second: SCROLL1_30
+  - first:
+      213: 2960756023582528745
+    second: SCROLL1_31
+  - first:
+      213: 9222808453505298055
+    second: SCROLL1_32
+  - first:
+      213: -8557958398384124533
+    second: SCROLL1_33
+  - first:
+      213: -3608789328692499499
+    second: SCROLL1_34
+  - first:
+      213: 7782730314170681848
+    second: SCROLL1_35
+  - first:
+      213: -3512568103796568685
+    second: SCROLL1_36
+  - first:
+      213: 3980432718347832625
+    second: SCROLL1_37
+  - first:
+      213: 4900152029166691432
+    second: SCROLL1_38
+  - first:
+      213: -3854399274794608776
+    second: SCROLL1_39
+  - first:
+      213: 8796102702616282533
+    second: SCROLL1_40
+  - first:
+      213: -8216823850156218908
+    second: SCROLL1_41
+  - first:
+      213: -8818174416922714146
+    second: SCROLL1_42
+  - first:
+      213: -6661381934855850029
+    second: SCROLL1_43
+  - first:
+      213: -2190375556029228993
+    second: SCROLL1_44
+  - first:
+      213: 9118876012224248053
+    second: SCROLL1_45
+  - first:
+      213: -8424750221839131003
+    second: SCROLL1_46
+  - first:
+      213: -621636552087287931
+    second: SCROLL1_47
+  - first:
+      213: 5378508175091985283
+    second: SCROLL1_48
+  - first:
+      213: -7311936272704958454
+    second: SCROLL1_49
+  - first:
+      213: 8382095435154411676
+    second: SCROLL1_50
+  - first:
+      213: -8473817693505967575
+    second: SCROLL1_51
+  - first:
+      213: 2727818112787803706
+    second: SCROLL1_52
+  - first:
+      213: -1807606074912267162
+    second: SCROLL1_53
+  - first:
+      213: 1905023563166234292
+    second: SCROLL1_54
+  - first:
+      213: -3381530906748237996
+    second: SCROLL1_55
+  - first:
+      213: 8699458659691637642
+    second: SCROLL1_56
+  - first:
+      213: -7944126747500375560
+    second: SCROLL1_57
+  - first:
+      213: -6584328234579000153
+    second: SCROLL1_58
+  - first:
+      213: 5570278686960528076
+    second: SCROLL1_59
+  - first:
+      213: 5566645666525602879
+    second: SCROLL1_60
+  - first:
+      213: 5113683448939238921
+    second: SCROLL1_61
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 750
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SCROLL1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 326.5
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b380251c6dfdc2cf0800000000000000
+      internalID: -275599363717068741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCROLL1_1
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 0
+        width: 326.5
+        height: 500
+      alignment: 9
+      pivot: {x: 0.45399734, y: 0.50375503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521737c2f0d944c70800000000000000
+      internalID: 8954454647615222053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCROLL1_2
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 0
+        width: 326.5
+        height: 500
+      alignment: 9
+      pivot: {x: 0.43253362, y: 0.50534016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122040f9fbb8c9490800000000000000
+      internalID: -7738156404606500319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCROLL1_3
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 0
+        width: 326.5
+        height: 500
+      alignment: 9
+      pivot: {x: 0.41613266, y: 0.4923162}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d5443df4f93a960800000000000000
+      internalID: 7612102960381975929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCROLL1_4
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 0
+        width: 326.5
+        height: 500
+      alignment: 9
+      pivot: {x: 0.4438884, y: 0.493534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ec89b3fd6d98a90800000000000000
+      internalID: -7311076265793368458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCROLL1_5
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 0
+        width: 326.5
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5684895, y: 0.493534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa34ed7e54d7444a0800000000000000
+      internalID: -6610020613876726870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCROLL1_6
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 0
+        width: 326.5
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5462095, y: 0.4876068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e166bdaa7a7e44d50800000000000000
+      internalID: 6720751251255682590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCROLL1_7
+      rect:
+        serializedVersion: 2
+        x: 2282
+        y: 0
+        width: 326.5
+        height: 500
+      alignment: 9
+      pivot: {x: 0.513203, y: 0.48814562}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e250260ac3c71c550800000000000000
+      internalID: 6179356763559691566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCROLL1_8
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 0
+        width: 326.5
+        height: 500
+      alignment: 9
+      pivot: {x: 0.52393025, y: 0.48437378}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4154af79c0eb2e10800000000000000
+      internalID: 2174078401170919759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCROLL1_9
+      rect:
+        serializedVersion: 2
+        x: 2934
+        y: 0
+        width: 326.5
+        height: 500
+      alignment: 9
+      pivot: {x: 0.42491013, y: 0.49461165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430d68ae3058f3b80800000000000000
+      internalID: -8412859327038697420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCROLL1_10
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 0
+        width: 326.5
+        height: 500
+      alignment: 9
+      pivot: {x: 0.49917522, y: 0.49515048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c879d78964fbc85e0800000000000000
+      internalID: -1905938232357578868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCROLL1_11
+      rect:
+        serializedVersion: 2
+        x: 3586
+        y: 0
+        width: 326.5
+        height: 500
+      alignment: 9
+      pivot: {x: 0.46699354, y: 0.4919175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00efd8becb39a1c0800000000000000
+      internalID: -4491993394274377718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
