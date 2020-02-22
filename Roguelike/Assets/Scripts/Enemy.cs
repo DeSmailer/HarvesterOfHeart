@@ -184,7 +184,7 @@ public class Enemy : MonoBehaviour
     {
         if (player)
         {
-            if (Vector2.Distance(transform.position, Player.transform.position) > 0.4f)
+            if (Vector2.Distance(transform.position, Player.transform.position) > attackRange*6/8)
             {
                 PathToTarget = PathFinder.GetPath(Player.transform.position);
 
