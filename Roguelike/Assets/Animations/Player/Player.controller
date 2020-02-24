@@ -1950,7 +1950,7 @@ AnimatorStateMachine:
     m_Position: {x: 1080, y: -230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7295120307321665517}
-    m_Position: {x: 1950, y: -190, z: 0}
+    m_Position: {x: 1980, y: -270, z: 0}
   m_ChildStateMachines:
   - serializedVersion: 1
     m_StateMachine: {fileID: -8727352820172820000}

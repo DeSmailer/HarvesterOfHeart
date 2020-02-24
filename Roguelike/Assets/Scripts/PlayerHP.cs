@@ -60,7 +60,7 @@ public class PlayerHP : MonoBehaviour
         }
         if (Input.GetKeyUp("1")) 
         {
-            UseHPPotion();
+            UseHPPotionOnKey();
         }
         if (Input.GetKeyUp("3"))
         {
@@ -93,7 +93,18 @@ public class PlayerHP : MonoBehaviour
     }
 
     //восполнение хп
+
     public void UseHPPotion()
+    {
+        currentHP += maxHP * 0.05f;
+        if (currentHP > currentMaxHP)
+        {
+            currentHP = currentMaxHP;
+        }
+        DisplayHP();
+    }
+
+    public void UseHPPotionOnKey()
     {
         for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length
         {
@@ -101,11 +112,7 @@ public class PlayerHP : MonoBehaviour
             {
                 if (inventory.slots[i].transform.GetChild(0).CompareTag("HealthPotion"))
                 {
-                    currentHP += maxHP * 0.05f;
-                    if (currentHP > currentMaxHP)
-                    {
-                        currentHP = currentMaxHP;
-                    }
+                    UseHPPotion();
                     inventory.isFull[i] = false;
                     foreach (Transform t in inventory.slots[i].transform)
                     {
@@ -124,33 +131,24 @@ public class PlayerHP : MonoBehaviour
         DisplayHP();
     }
 
-    //использование души для уменьшения дамага
-    //public void UseSoul()
+    //public void UseHPPotionOnButton()
     //{
-    //    for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length
+    //    GameObject parent = transform.parent.gameObject;
+    //    if (parent.CompareTag("Slot"))
     //    {
-    //        if (inventory.slots[i].transform.childCount > 0)
+    //        int n = parent.GetComponent<Slot>().number;
+    //        UseHPPotion();
+    //        inventory.isFull[n] = false;
+    //        foreach (Transform t in inventory.slots[n].transform)
     //        {
-    //            if (inventory.slots[i].transform.GetChild(0).CompareTag("Soul"))
-    //            {
-    //                currentDamageRatio = currentMaxDamageRatio * 0.75f;
-    //                activeSoul = true;
-    //                timeForSoul = 15f;
-    //                inventory.isFull[i] = false;
-    //                foreach (Transform t in inventory.slots[i].transform)
-    //                {
-    //                    Destroy(t.gameObject);
-    //                }
-    //                break;
-    //            }
+    //            Destroy(t.gameObject);
     //        }
-    //        else
-    //        {
-    //            continue;
-    //        }
-
     //    }
+        
+        
+    //    DisplayHP();
     //}
+
     public void UseScroll()
     {
         for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length

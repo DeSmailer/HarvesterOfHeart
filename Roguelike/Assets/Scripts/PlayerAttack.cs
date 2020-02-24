@@ -276,10 +276,10 @@ public class PlayerAttack : MonoBehaviour
 
         mousePoint = cam.ScreenToWorldPoint(new Vector2(mousePos.x, mousePos.y));
 
-        GUILayout.BeginArea(new Rect(20, 20, 250, 120));
-        GUILayout.Label("Screen pixels: " + cam.pixelWidth + ":" + cam.pixelHeight);
-        GUILayout.Label("Mouse position: " + mousePos);
-        GUILayout.Label("World position: " + mousePoint.ToString("F3"));
-        GUILayout.EndArea();
+        //GUILayout.BeginArea(new Rect(20, 20, 250, 120));
+        //GUILayout.Label("Screen pixels: " + cam.pixelWidth + ":" + cam.pixelHeight);
+        //GUILayout.Label("Mouse position: " + mousePos);
+        //GUILayout.Label("World position: " + mousePoint.ToString("F3"));
+        //GUILayout.EndArea();
     }
 }

@@ -280,6 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da97ef23dd1709140947eb4074125eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 1
   temporarySlot: {fileID: 303557093}
 --- !u!1 &234662612
 GameObject:
@@ -367,6 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da97ef23dd1709140947eb4074125eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 7
   temporarySlot: {fileID: 303557093}
 --- !u!1 &303557092
 GameObject:
@@ -418,6 +420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da97ef23dd1709140947eb4074125eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 0
   temporarySlot: {fileID: 0}
 --- !u!114 &303557095
 MonoBehaviour:
@@ -571,6 +574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da97ef23dd1709140947eb4074125eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 2
   temporarySlot: {fileID: 303557093}
 --- !u!1 &500628973
 GameObject:
@@ -658,6 +662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da97ef23dd1709140947eb4074125eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 4
   temporarySlot: {fileID: 303557093}
 --- !u!1 &625575452
 GameObject:
@@ -841,6 +846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da97ef23dd1709140947eb4074125eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 5
   temporarySlot: {fileID: 303557093}
 --- !u!1 &966394377
 GameObject:
@@ -928,6 +934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da97ef23dd1709140947eb4074125eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 0
   temporarySlot: {fileID: 303557093}
 --- !u!1 &1024803706
 GameObject:
@@ -1085,6 +1092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da97ef23dd1709140947eb4074125eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 6
   temporarySlot: {fileID: 303557093}
 --- !u!1 &1322839635
 GameObject:
@@ -1525,6 +1533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da97ef23dd1709140947eb4074125eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 3
   temporarySlot: {fileID: 303557093}
 --- !u!1 &1932179859 stripped
 GameObject:
@@ -2083,6 +2092,11 @@ PrefabInstance:
         type: 3}
       propertyPath: sprites.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007442211185112148, guid: 50203d4380845e5469453c0940806115,
+        type: 3}
+      propertyPath: isFull.Array.size
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1007442211185112148, guid: 50203d4380845e5469453c0940806115,
         type: 3}

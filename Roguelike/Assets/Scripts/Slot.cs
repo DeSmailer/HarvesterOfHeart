@@ -8,6 +8,8 @@ public class Slot : MonoBehaviour
 
     private Inventory inventory;
 
+    public int number;
+
     public Transform temporarySlot;
     private void Start()
     {
