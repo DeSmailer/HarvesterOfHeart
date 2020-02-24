@@ -44,7 +44,6 @@ public class Boss2Enemy : MonoBehaviour
     {
         if (timeBtwAttac <= 0)
         {
-            print("da");
             anim.SetInteger("state", 1);
             Shoot();
             SetStartTime();
@@ -87,7 +86,6 @@ public class Boss2Enemy : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHP -= damage;
-        print("Fay-Fay");
         DisplayHP();
         if (currentHP <= 0)
         {
@@ -183,7 +181,6 @@ public class Boss2Enemy : MonoBehaviour
     public void SetStartTime2()
     {
         shootCount--;
-        print(shootCount);
         timeBtwPowerAttacShoot = startTimeBtwPowerAttacShoot;
     }
 

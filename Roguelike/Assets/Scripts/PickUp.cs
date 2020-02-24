@@ -90,9 +90,9 @@ public class PickUp : MonoBehaviour
     IEnumerator Drop()
     {
         var position = transform.position;
-        float up;
-        float l;
-        float r;
+        //float up;
+        //float l;
+        //float r;
         for (float n = 2.9f; n <= 3.2f; n += 0.005f)
         {
             if (n >= 3)

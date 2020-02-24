@@ -23,7 +23,8 @@ public class Enemy : MonoBehaviour
 
 
     //атака
-    private float damage;
+    [Header ("урон(коефициент перед умножением на лвл)")]
+    public float damage;
     private PlayerHP playerHP;
     public Transform attackPos;
     public float attackRange;
@@ -42,8 +43,6 @@ public class Enemy : MonoBehaviour
         if (Player != null)
         {
             PathFinder = GetComponent<PathFinder>();
-            //PathToTarget = PathFinder.GetPath(Player.transform.position);
-            //GameObject.FindGameObjectWithTag("levelGenerator").GetComponent<LevelGenerator>().floorForSpawnMob;
             isMooving = true;
 
 
@@ -60,7 +59,7 @@ public class Enemy : MonoBehaviour
             movePos2 = position;
         }
 
-        damage = 3 * LevelGenerator.LVL;
+        damage = damage * LevelGenerator.LVL;
         playerHP = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHP>();
         health = 7.8f * LevelGenerator.LVL;
         speed = UnityEngine.Random.Range(1f, 2f);
@@ -125,52 +124,55 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             AmuletBuff.countDeadMobs++;
-            float r = (int)UnityEngine.Random.Range(0f, 4f);
 
-            if (r == 0)
-            {
-                Instantiate(HealthPotion, transform.position, Quaternion.identity);
-            }
-
-            else if (r == 1)
-            {
-                Instantiate(Scroll, transform.position, Quaternion.identity);
-            }
-
-            else if (r == 2)
-            {
-                Instantiate(Soull, transform.position, Quaternion.identity);
-            }
-
-            else if (r == 3)
-            {
-                Instantiate(HealthPotion, transform.position, Quaternion.identity);
-            }
-
-            r = UnityEngine.Random.Range(0f, 1f);
-            if (r <= DropAmuletChance(3, AmuletBuff.GdropCount, AmuletBuff.countDeadMobs))
-            {
-                Instantiate(GAmulet, transform.position, Quaternion.identity);
-                AmuletBuff.GdropCount++;
-            }
-            r = UnityEngine.Random.Range(0f, 1f);
-            if (r <= DropAmuletChance(2, AmuletBuff.BdropCount, AmuletBuff.countDeadMobs))
-            {
-                Instantiate(BAmulet, transform.position, Quaternion.identity);
-                AmuletBuff.BdropCount++;
-            }
-            r = UnityEngine.Random.Range(0f, 1f);
-            if (r <= DropAmuletChance(2, AmuletBuff.YdropCount, AmuletBuff.countDeadMobs))
-            {
-                Instantiate(YAmulet, transform.position, Quaternion.identity);
-                AmuletBuff.YdropCount++;
-            }
-
-
-
+            Drop();
 
             GameObject.FindGameObjectWithTag("levelGenerator").GetComponent<LevelGenerator>().DecreaseMobCountOnLvl();
             RIP();
+        }
+    }
+
+    private void Drop()
+    {
+        float r = (int)UnityEngine.Random.Range(0f, 4f);
+
+        if (r == 0)
+        {
+            Instantiate(HealthPotion, transform.position, Quaternion.identity);
+        }
+
+        else if (r == 1)
+        {
+            Instantiate(Scroll, transform.position, Quaternion.identity);
+        }
+
+        else if (r == 2)
+        {
+            Instantiate(Soull, transform.position, Quaternion.identity);
+        }
+
+        else if (r == 3)
+        {
+            Instantiate(HealthPotion, transform.position, Quaternion.identity);
+        }
+
+        r = UnityEngine.Random.Range(0f, 1f);
+        if (r <= DropAmuletChance(3, AmuletBuff.GdropCount, AmuletBuff.countDeadMobs))
+        {
+            Instantiate(GAmulet, transform.position, Quaternion.identity);
+            AmuletBuff.GdropCount++;
+        }
+        r = UnityEngine.Random.Range(0f, 1f);
+        if (r <= DropAmuletChance(2, AmuletBuff.BdropCount, AmuletBuff.countDeadMobs))
+        {
+            Instantiate(BAmulet, transform.position, Quaternion.identity);
+            AmuletBuff.BdropCount++;
+        }
+        r = UnityEngine.Random.Range(0f, 1f);
+        if (r <= DropAmuletChance(2, AmuletBuff.YdropCount, AmuletBuff.countDeadMobs))
+        {
+            Instantiate(YAmulet, transform.position, Quaternion.identity);
+            AmuletBuff.YdropCount++;
         }
     }
 
@@ -182,6 +184,7 @@ public class Enemy : MonoBehaviour
 
     private void Move(Vector2 target, bool player)
     {
+        //если видит игрока
         if (player)
         {
             if (Vector2.Distance(transform.position, Player.transform.position) > attackRange*6/8)
@@ -205,6 +208,8 @@ public class Enemy : MonoBehaviour
                 isMooving = false;
                 anim.SetInteger("state", 0);
             }
+
+            //атака
             if (PathToTarget.Count == 0)
             {
                 if (timeBtwAttac <= 0)
@@ -247,7 +252,7 @@ public class Enemy : MonoBehaviour
             }
         }
 
-
+        //если НЕ видит игрока
         else
         {
             if (Vector2.Distance(transform.position, target) > 0.2f)
@@ -269,7 +274,6 @@ public class Enemy : MonoBehaviour
             {
                 return;
             }
-
 
             if (isMooving)
             {

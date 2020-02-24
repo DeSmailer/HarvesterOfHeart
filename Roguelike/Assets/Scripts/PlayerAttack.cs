@@ -10,7 +10,7 @@ public class PlayerAttack : MonoBehaviour
 
 
     public float startTimeBtwAttac;
-    public float timeForScroll;
+    public float timeForSoul;
 
     public float MaxDamage; //максимальный урон без шмотки
     public float currentMaxDamage; //максимальный урон под бафом шмотки
@@ -20,57 +20,82 @@ public class PlayerAttack : MonoBehaviour
     private float timeBtwAttac = 0;
     private float timeBtwAttacForAttack2 = 0;
     int attackCount = 0;
-
     public Animator anim;
 
+    private Camera cam;
+
+    Vector2 mousePoint;
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
         currentMaxDamage = 2;
         currentDamage = MaxDamage = currentMaxDamage;
         anim = GetComponent<Animator>();
+        cam = Camera.main;
     }
 
     void Update()
     {
         if (Input.GetKeyUp("3"))
         {
-            if (timeForScroll <= 0 && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHP>().timeForSoul <= 0)
-                UseScroll();
+            if (timeForSoul <= 0 && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHP>().timeForScroll <= 0)
+                UseSoul();
         }
 
         if (timeBtwAttac <= 0)
         {
-            if (Input.GetKeyUp("space"))
+            if (Input.GetMouseButtonDown(0))
             {
                 if (attackCount == 1 && timeBtwAttacForAttack2 <= startTimeBtwAttac + 1)
                 {
-                    bool r = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().attackPositiontR;
-
-                    if (r)
+                    byte r = CalculateAngle();
+                    switch (r)
                     {
-                        anim.SetInteger("state", 5);
-                    }
-                    else
-                    {
-                        anim.SetInteger("state", 6);
+                        //floor, wall, l, u, r, d, luc, ldc, ruc, rdc, lr, ud, ldr, lur, uld, urd, rd, ru, ld, lu, nldr, nlur, nuad, nurd, nlurd;
+                        case 1:
+                            anim.SetInteger("state", 6);
+                            break;
+                        case 2:
+                            anim.SetInteger("state", 6);
+                            break;
+                        case 3:
+                            anim.SetInteger("state", 5);
+                            break;
+                        case 4:
+                            anim.SetInteger("state", 6);
+                            break;
+                        default:
+                            anim.SetInteger("state", 5);
+                            break;
                     }
                 }
 
                 else
                 {
-                    bool r = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().attackPositiontR;
+                    byte r = CalculateAngle();
 
-                    if (r)
+                    switch (r)
                     {
-                        anim.SetInteger("state", 3);
-                    }
-                    else
-                    {
-                        anim.SetInteger("state", 4);
+                        //floor, wall, l, u, r, d, luc, ldc, ruc, rdc, lr, ud, ldr, lur, uld, urd, rd, ru, ld, lu, nldr, nlur, nuad, nurd, nlurd;
+                        case 1:
+                            anim.SetInteger("state", 4);
+                            break;
+                        case 2:
+                            anim.SetInteger("state", 3);
+                            break;
+                        case 3:
+                            anim.SetInteger("state", 3);
+                            break;
+                        case 4:
+                            anim.SetInteger("state", 3);
+                            break;
+                        default:
+                            anim.SetInteger("state", 3);
+                            break;
                     }
                 }
             }
+
             else
             {
                 timeBtwAttacForAttack2 += Time.deltaTime;
@@ -83,9 +108,9 @@ public class PlayerAttack : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (timeForScroll > 0f)
+        if (timeForSoul > 0f)
         {
-            timeForScroll -= Time.deltaTime;
+            timeForSoul -= Time.deltaTime;
         }
         else
         {
@@ -98,16 +123,41 @@ public class PlayerAttack : MonoBehaviour
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
     }
 
-    public void UseScroll()
+    //public void UseScroll()
+    //{
+    //    for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length
+    //    {
+    //        if (inventory.slots[i].transform.childCount > 0)
+    //        {
+    //            if (inventory.slots[i].transform.GetChild(0).CompareTag("Scroll"))
+    //            {
+    //                currentDamage = currentMaxDamage * 1.25f;
+    //                timeForScroll = 15f;
+    //                inventory.isFull[i] = false;
+    //                foreach (Transform t in inventory.slots[i].transform)
+    //                {
+    //                    Destroy(t.gameObject);
+    //                }
+    //                break;
+    //            }
+    //        }
+    //        else
+    //        {
+    //            continue;
+    //        }
+
+    //    }
+    //}
+    public void UseSoul()
     {
         for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length
         {
             if (inventory.slots[i].transform.childCount > 0)
             {
-                if (inventory.slots[i].transform.GetChild(0).CompareTag("Scroll"))
+                if (inventory.slots[i].transform.GetChild(0).CompareTag("Soul"))
                 {
                     currentDamage = currentMaxDamage * 1.25f;
-                    timeForScroll = 15f;
+                    timeForSoul = 15f;
                     inventory.isFull[i] = false;
                     foreach (Transform t in inventory.slots[i].transform)
                     {
@@ -182,5 +232,56 @@ public class PlayerAttack : MonoBehaviour
     {
         attackCount = 0;
         timeBtwAttacForAttack2 = 0;
+    }
+    private byte CalculateAngle()
+    {
+        Vector2 playerPos = transform.position;
+
+        Vector2 dir = playerPos - (Vector2)mousePoint;
+
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+
+        if (angle >= -45 && angle <= 45)
+        {
+            print("лево");
+            return 1;
+        }
+        else if (angle >= 45 && angle <= 135)
+        {
+            print("низ");
+            return 2;
+        }
+        else if (angle >= 135 || angle <= -135)
+        {
+            print("право");
+            return 3;
+        }
+        else if (angle >= -135 && angle <= -45)
+        {
+            print("верх");
+            return 4;
+        }
+        else return 1;
+    }
+    //Screen.width / 2 - Input.mousePosition.x и Screen.height / 2 - Input.mousePosition.y
+
+
+    void OnGUI()
+    {
+        Event currentEvent = Event.current;
+        Vector2 mousePos = new Vector2();
+
+        // Get the mouse position from Event.
+        // Note that the y position from Event is inverted.
+        mousePos.x = currentEvent.mousePosition.x;
+        mousePos.y = cam.pixelHeight - currentEvent.mousePosition.y;
+
+        mousePoint = cam.ScreenToWorldPoint(new Vector2(mousePos.x, mousePos.y));
+
+        GUILayout.BeginArea(new Rect(20, 20, 250, 120));
+        GUILayout.Label("Screen pixels: " + cam.pixelWidth + ":" + cam.pixelHeight);
+        GUILayout.Label("Mouse position: " + mousePos);
+        GUILayout.Label("World position: " + mousePoint.ToString("F3"));
+        GUILayout.EndArea();
     }
 }

@@ -107,6 +107,7 @@ MonoBehaviour:
   movePos2: {x: 0, y: 0}
   timeToMove: 0
   speed: 0
+  damage: 3
   attackPos: {fileID: 7449184587008648045}
   attackRange: 0.45
   startTimeBtwAttac: 1.81

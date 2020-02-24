@@ -8,8 +8,6 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb2d;
 
-    public bool attackPositiontR;
-
     public Animator anim;
 
     float goHorizontal;
@@ -30,12 +28,10 @@ public class PlayerController : MonoBehaviour
 
         if(goHorizontal < 0)
         {
-            SetPosAttal(false);
             anim.SetInteger("state", 1);
         }
         else if (goHorizontal > 0)
         {
-            SetPosAttal(true);
             anim.SetInteger("state", 2);
         }
         else if(goHorizontal == 0)
@@ -53,11 +49,5 @@ public class PlayerController : MonoBehaviour
 
         rb2d.velocity = new Vector2(goHorizontal, goVertical) * speed * Time.deltaTime;
     }
-    public void SetPosAttal(bool r)
-    {
-        if (r)
-            attackPositiontR = true;
-        else
-            attackPositiontR = false;
-    }
+   
 }

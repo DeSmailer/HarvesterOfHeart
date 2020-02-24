@@ -18,11 +18,10 @@ public class PlayerHP : MonoBehaviour
 
     public Slider slider;
     public Image fillImage;
-    public float timeForSoul;
+    public float timeForScroll;
 
 
     private Inventory inventory;
-    private bool activeSoul;
     private Color color1;
     private Color color2;
     private int changeColorTime = 5;
@@ -33,7 +32,6 @@ public class PlayerHP : MonoBehaviour
         maxDamageRatio = currentMaxDamageRatio = 1;
         DisplayHP();
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
-        activeSoul = false;
         color1 = new Color(255, 255, 255, 1f);
         color2 = new Color(255, 255, 255, 0f);
         fillImage.color = color1;
@@ -66,20 +64,19 @@ public class PlayerHP : MonoBehaviour
         }
         if (Input.GetKeyUp("2"))
         {
-            if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttack>().timeForScroll <= 0 && timeForSoul <= 0)
-            UseSoul();
+            if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttack>().timeForSoul <= 0 && timeForScroll <= 0)
+                UseScroll();
         }
     }
 
     private void FixedUpdate()
     {
-        if(activeSoul == true && timeForSoul > 0f)
+        if(timeForScroll > 0f)
         {
-            timeForSoul -= Time.deltaTime;
+            timeForScroll -= Time.deltaTime;
         }
         else
         {
-            activeSoul = false;
             currentDamageRatio = currentMaxDamageRatio;
         }
     }
@@ -128,17 +125,42 @@ public class PlayerHP : MonoBehaviour
     }
 
     //использование души для уменьшения дамага
-    public void UseSoul()
+    //public void UseSoul()
+    //{
+    //    for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length
+    //    {
+    //        if (inventory.slots[i].transform.childCount > 0)
+    //        {
+    //            if (inventory.slots[i].transform.GetChild(0).CompareTag("Soul"))
+    //            {
+    //                currentDamageRatio = currentMaxDamageRatio * 0.75f;
+    //                activeSoul = true;
+    //                timeForSoul = 15f;
+    //                inventory.isFull[i] = false;
+    //                foreach (Transform t in inventory.slots[i].transform)
+    //                {
+    //                    Destroy(t.gameObject);
+    //                }
+    //                break;
+    //            }
+    //        }
+    //        else
+    //        {
+    //            continue;
+    //        }
+
+    //    }
+    //}
+    public void UseScroll()
     {
         for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length
         {
             if (inventory.slots[i].transform.childCount > 0)
             {
-                if (inventory.slots[i].transform.GetChild(0).CompareTag("Soul"))
+                if (inventory.slots[i].transform.GetChild(0).CompareTag("Scroll"))
                 {
                     currentDamageRatio = currentMaxDamageRatio * 0.75f;
-                    activeSoul = true;
-                    timeForSoul = 15f;
+                    timeForScroll = 15f;
                     inventory.isFull[i] = false;
                     foreach (Transform t in inventory.slots[i].transform)
                     {
@@ -154,6 +176,7 @@ public class PlayerHP : MonoBehaviour
 
         }
     }
+
     private void DisplayHP()
     {
         float HPSlider = currentHP / currentMaxHP;
