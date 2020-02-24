@@ -59,8 +59,8 @@ public class PlayerHP : MonoBehaviour
             }
         }
         if (Input.GetKeyUp("1")) 
-        {            
-            RecoveryHP();
+        {
+            UseHPPotion();
         }
         if (Input.GetKeyUp("3"))
         {
@@ -93,7 +93,7 @@ public class PlayerHP : MonoBehaviour
     }
 
     //восполнение хп
-    public void RecoveryHP()
+    public void UseHPPotion()
     {
         for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length
         {
