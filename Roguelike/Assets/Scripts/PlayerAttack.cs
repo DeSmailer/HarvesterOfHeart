@@ -36,7 +36,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp("3"))
+        if (Input.GetKeyUp("2"))
         {
             if (timeForSoul <= 0 && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHP>().timeForScroll <= 0)
                 UseSoul();
@@ -51,7 +51,6 @@ public class PlayerAttack : MonoBehaviour
                     byte r = CalculateAngle();
                     switch (r)
                     {
-                        //floor, wall, l, u, r, d, luc, ldc, ruc, rdc, lr, ud, ldr, lur, uld, urd, rd, ru, ld, lu, nldr, nlur, nuad, nurd, nlurd;
                         case 1:
                             anim.SetInteger("state", 6);
                             break;
@@ -76,7 +75,6 @@ public class PlayerAttack : MonoBehaviour
 
                     switch (r)
                     {
-                        //floor, wall, l, u, r, d, luc, ldc, ruc, rdc, lr, ud, ldr, lur, uld, urd, rd, ru, ld, lu, nldr, nlur, nuad, nurd, nlurd;
                         case 1:
                             anim.SetInteger("state", 4);
                             break;

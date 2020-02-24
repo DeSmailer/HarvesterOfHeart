@@ -62,7 +62,7 @@ public class PlayerHP : MonoBehaviour
         {            
             RecoveryHP();
         }
-        if (Input.GetKeyUp("2"))
+        if (Input.GetKeyUp("3"))
         {
             if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttack>().timeForSoul <= 0 && timeForScroll <= 0)
                 UseScroll();
