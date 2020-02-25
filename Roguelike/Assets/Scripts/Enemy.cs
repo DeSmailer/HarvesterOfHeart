@@ -188,7 +188,7 @@ public class Enemy : MonoBehaviour
         //если видит игрока
         if (player)
         {
-            if (Vector2.Distance(transform.position, Player.transform.position) > attackRange*6/8)
+            if (Vector2.Distance(transform.position, Player.transform.position) > attackRange*7/8)
             {
                 PathToTarget = PathFinder.GetPath(Player.transform.position);
 
@@ -218,7 +218,6 @@ public class Enemy : MonoBehaviour
                     if (Player.transform.position.x - transform.position.x < 0)
                     {
                         anim.SetInteger("state", 4);
-
                     }
                     else if (Player.transform.position.x - transform.position.x >= 0) 
                     {
@@ -333,7 +332,7 @@ public class Enemy : MonoBehaviour
 
     public void RIP()
     {
-        Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Instantiate(deathEffect, new Vector3(transform.position.x, transform.position.y, -50), Quaternion.identity);
         Destroy(gameObject);
     }
 

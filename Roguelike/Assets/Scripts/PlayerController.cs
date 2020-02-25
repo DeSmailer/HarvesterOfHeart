@@ -126,27 +126,27 @@ public LayerMask rollLayerMask;
                 if (distanceTraveled >= maxRollDistance)
                 {
                     state = State.Normal;
-                    /*anim.SetInteger("state", 0);*/
-                    if (goHorizontal < 0)
-                    {
-                        anim.SetInteger("state", 9);
-                    }
-                    else if (goHorizontal > 0)
-                    {
-                        anim.SetInteger("state", 10);
-                    }
-                    else if (goHorizontal == 0)
-                    {
-                        anim.SetInteger("state", 10);
-                    }
-                    if (goHorizontal == 0 && goVertical == 1)
-                    {
-                        anim.SetInteger("state", 9);
-                    }
-                    else if (goHorizontal == 0 && goVertical == -1)
-                    {
-                        anim.SetInteger("state", 10);
-                    }
+                    ///*anim.SetInteger("state", 0);*/
+                    //if (goHorizontal < 0)
+                    //{
+                    //    anim.SetInteger("state", 9);
+                    //}
+                    //else if (goHorizontal > 0)
+                    //{
+                    //    anim.SetInteger("state", 10);
+                    //}
+                    //else if (goHorizontal == 0)
+                    //{
+                    //    anim.SetInteger("state", 10);
+                    //}
+                    //if (goHorizontal == 0 && goVertical == 1)
+                    //{
+                    //    anim.SetInteger("state", 9);
+                    //}
+                    //else if (goHorizontal == 0 && goVertical == -1)
+                    //{
+                    //    anim.SetInteger("state", 10);
+                    //}
                     playerHP.attackable = true;
                 }
 

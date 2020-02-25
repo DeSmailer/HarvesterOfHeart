@@ -1,0 +1,307 @@
+fileFormatVersion: 2
+guid: 315249a49b15d0c45977e00a6830dedc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1859736598272420869
+    second: character_attcak_down (2)_0
+  - first:
+      213: 3307690492054789270
+    second: character_attcak_down (2)_1
+  - first:
+      213: 8662347267199054807
+    second: character_attcak_down (2)_2
+  - first:
+      213: 2971332654472459627
+    second: character_attcak_down (2)_3
+  - first:
+      213: -5220920321767983698
+    second: character_attcak_down (2)_4
+  - first:
+      213: 793319752815502224
+    second: character_attcak_down (2)_5
+  - first:
+      213: 6969231709832232690
+    second: character_attcak_down (2)_6
+  - first:
+      213: -406552288775870967
+    second: character_attcak_down (2)_7
+  - first:
+      213: -6071092729373987132
+    second: character_attcak_down (2)_8
+  - first:
+      213: 1489478511418189753
+    second: character_attcak_down (2)_9
+  - first:
+      213: 252306059539470818
+    second: character_attcak_down (2)_10
+  - first:
+      213: 7770573812249254835
+    second: character_attcak_down (2)_11
+  - first:
+      213: -7586851549121891060
+    second: character_attcak_down (2)_12
+  - first:
+      213: 2012610312635560051
+    second: character_attcak_down (2)_13
+  - first:
+      213: 5939321602902139122
+    second: character_attcak_down (2)_14
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: character_attcak_down (2)_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 33
+        width: 592
+        height: 604
+      alignment: 9
+      pivot: {x: 0.27366963, y: 0.5253524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3b976c1f6d63870800000000000000
+      internalID: 8662347267199054807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_attcak_down (2)_3
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 18
+        width: 558
+        height: 665
+      alignment: 9
+      pivot: {x: 0.28732222, y: 0.4827298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6579537e4b4c3920800000000000000
+      internalID: 2971332654472459627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_attcak_down (2)_4
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 18
+        width: 551
+        height: 601
+      alignment: 9
+      pivot: {x: 0.30546314, y: 0.53184855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5b66401a09b87b0800000000000000
+      internalID: -5220920321767983698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_attcak_down (2)_5
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 18
+        width: 651
+        height: 601
+      alignment: 9
+      pivot: {x: 0.58232826, y: 0.5445881}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0936edbac10720b00800000000000000
+      internalID: 793319752815502224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_attcak_down (2)_6
+      rect:
+        serializedVersion: 2
+        x: 2992
+        y: 18
+        width: 667
+        height: 601
+      alignment: 9
+      pivot: {x: 0.59183276, y: 0.5509579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe30f5c05fa7b060800000000000000
+      internalID: 6969231709832232690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_attcak_down (2)_7
+      rect:
+        serializedVersion: 2
+        x: 3697
+        y: 32
+        width: 517
+        height: 580
+      alignment: 9
+      pivot: {x: 0.47038248, y: 0.5396021}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90664ece8d2ab5af0800000000000000
+      internalID: -406552288775870967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_attcak_down (2)_8
+      rect:
+        serializedVersion: 2
+        x: 4318
+        y: 46
+        width: 723
+        height: 599
+      alignment: 9
+      pivot: {x: 0.26173022, y: 0.512782}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cee43324552fbba0800000000000000
+      internalID: -6071092729373987132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -79,7 +79,7 @@ public class PlayerAttack : MonoBehaviour
                             anim.SetInteger("state", 4);
                             break;
                         case 2:
-                            anim.SetInteger("state", 3);
+                            anim.SetInteger("state", 9);//3
                             break;
                         case 3:
                             anim.SetInteger("state", 3);
