@@ -38,7 +38,7 @@ public class LevelGenerator : MonoBehaviour
     public GameObject floor1, floor2, floor3, wall, l, u, r, d, luc, ldc, ruc, rdc, rd, ru, ld, lu, menorahL, menorahU, menorahR, menorahD;
 
     NormalGenerationCheck normalGenerationCheck;
-
+    //вспомогательные массивы(словари)
     public int[,] LwallForMenorah;
     public int[,] UwallForMenorah;
     public int[,] RwallForMenorah;

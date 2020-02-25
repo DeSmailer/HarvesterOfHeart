@@ -21,10 +21,19 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 moveDir;
     private Vector3 rollDir;
-    public float rollSpeed;
+    private float rollSpeed;
     private float distanceTraveled;
 
+    public float maxRollDistance;
+
     private State state;
+
+public LayerMask rollLayerMask;
+
+    private PlayerHP playerHP;
+
+    
+
     //Используем это для инициализации
     void Start()
     {
@@ -32,6 +41,8 @@ public class PlayerController : MonoBehaviour
         speed = 120f;
         anim = GetComponent<Animator>();
         state = State.Normal;
+        playerHP = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHP>();
+
     }
 
     private void Update()
@@ -49,17 +60,20 @@ public class PlayerController : MonoBehaviour
                     rollSpeed = 21f;
                     state = State.Rolling;
                     distanceTraveled = 0;
+                    playerHP.attackable = false;
                 }
                 break;
 
             case State.Rolling:
-                float rollSpeedDropMultiplier = 0.05f;
+                float rollSpeedDropMultiplier = 0.005f;
                 rollSpeed -= rollSpeed * rollSpeedDropMultiplier * Time.deltaTime;
 
                 float rollSpeedMinimum = 20f;
                 if (rollSpeed <= rollSpeedMinimum)
                 {
                     state = State.Normal;
+                    anim.SetInteger("state", 0);
+                    playerHP.attackable = true;
                 }
                 break;
         }
@@ -93,18 +107,48 @@ public class PlayerController : MonoBehaviour
                 moveDir = new Vector3(goHorizontal, goVertical).normalized;
                 rb2d.velocity = moveDir * speed * Time.deltaTime;
                 break;
-
+                
 
             case State.Rolling:
+
+                RaycastHit2D raycastHit2D = Physics2D.Raycast(transform.position, moveDir, 0.01f, rollLayerMask);
+                if (raycastHit2D.collider != null)
+                {
+                    state = State.Normal;
+                    
+                    playerHP.attackable = true;
+                }
+
                 rb2d.velocity = rollDir * rollSpeed ;
                 distanceTraveled += rollSpeed * Time.deltaTime;
 
-                if (distanceTraveled >= 1.8)
+
+                if (distanceTraveled >= maxRollDistance)
                 {
-                    print(distanceTraveled);
                     state = State.Normal;
+                    /*anim.SetInteger("state", 0);*/
+                    if (goHorizontal < 0)
+                    {
+                        anim.SetInteger("state", 9);
+                    }
+                    else if (goHorizontal > 0)
+                    {
+                        anim.SetInteger("state", 10);
+                    }
+                    else if (goHorizontal == 0)
+                    {
+                        anim.SetInteger("state", 10);
+                    }
+                    if (goHorizontal == 0 && goVertical == 1)
+                    {
+                        anim.SetInteger("state", 9);
+                    }
+                    else if (goHorizontal == 0 && goVertical == -1)
+                    {
+                        anim.SetInteger("state", 10);
+                    }
+                    playerHP.attackable = true;
                 }
-                    
 
                 break;
         }

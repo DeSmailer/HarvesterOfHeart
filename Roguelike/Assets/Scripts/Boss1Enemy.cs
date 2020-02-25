@@ -5,35 +5,36 @@ using UnityEngine.UI;
 
 public class Boss1Enemy : MonoBehaviour
 {
+    //движение
+    public float speed;
+    //хп
     public float currentHP;
     public float maxHP;
-
+    public Slider slider;
     //путь
     private List<Vector2> PathToPlayer = new List<Vector2>();
     private PathFinder PathFinder;
     private bool isMooving;
-
+    //игрока ищет
     public GameObject Player;
-
-    public float speed;
-    public Slider slider;
-    public float offset;
-    public GameObject womenBeam;
-    public GameObject womenBeamSplash;
-
-    public float startTimeToSplashAttack;
-    float timeToSplashAttack;
-
-    //атака
+    //урон
     private float damage;
+    public LayerMask whatIsEnemies;
+    //хп гг
     private PlayerHP playerHP;
-    public float attackRange;
+    //простая атака
     public float startTimeBtwAttac;
     public float timeBtwAttac = 0;
-    public LayerMask whatIsEnemies;
-    public GameObject HealthPotion, Scroll, Soull, GAmulet, BAmulet, YAmulet;
+    public float offset;
+    public GameObject womenBeam;
+    //время перед сплеш атакой
+    public float startTimeToSplashAttack;
+    private float timeToSplashAttack;
+    public GameObject womenBeamSplash;
     public GameObject attackPositiont;
-
+    //что дропает
+    public GameObject HealthPotion, Scroll, Soull, GAmulet, BAmulet, YAmulet;
+    //анимации
     public Animator anim;
 
     void Start()
@@ -132,11 +133,7 @@ public class Boss1Enemy : MonoBehaviour
     {
         Instantiate(womenBeamSplash, new Vector3(attackPositiont.transform.position.x, attackPositiont.transform.position.y, -95), Quaternion.identity);
     }
-    //private void OnDrawGizmosSelected()
-    //{
-    //    Gizmos.color = Color.red;
-    //    Gizmos.DrawWireSphere(attackPos.position, attackRange);
-    //}
+    
     private void DisplayHP()
     {
         float HPSlider = currentHP / maxHP;

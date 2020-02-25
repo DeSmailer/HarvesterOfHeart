@@ -6,30 +6,31 @@ using UnityEngine.UI;
 
 public class Boss2Enemy : MonoBehaviour
 {
+    //хп
     public float currentHP;
     public float maxHP;
-
-    //путь
-    private List<Vector2> PathToPlayer = new List<Vector2>();
+    public Slider slider;
+    //ищет игрока
     private GameObject Player;
-
-    //атака
+    //чем стреляет
+    public GameObject projectile;
+    //простая атака
     public Transform attackPos;
-
     public float startTimeBtwAttac;
     public float timeBtwAttac = 2;
-
+    //павер атака
     public float startTimeBtwPowerAttac;
     private float timeBtwPowerAttac = 4;
+    //время перед выстрелами павер атаки
     public float startTimeBtwPowerAttacShoot;
     private float timeBtwPowerAttacShoot = 0;
+    //количество выстрелов в павер атаке
     public int startShootCount;
     private int shootCount;
+    //что дропает
     public GameObject HealthPotion, Scroll, Soull, GAmulet, BAmulet, YAmulet;
-    public Slider slider;
-
-    public GameObject projectile;
-
+    
+    //анимации
     public Animator anim;
     void Start()
     {

@@ -6,6 +6,7 @@ public class SpawnItem : MonoBehaviour
 {
     public GameObject item;
     private Transform player;
+    public int slotNumber;
     public string type;
     private void Start()
     {

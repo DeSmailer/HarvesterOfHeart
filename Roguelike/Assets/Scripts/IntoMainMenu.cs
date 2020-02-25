@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class IntoMainMenu : MonoBehaviour
 {
+    //время перед перезапуском
     public float time = 4;
 
     private void Start()

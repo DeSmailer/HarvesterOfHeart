@@ -6,22 +6,22 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    //хп
     public float health;
 
     //путь
+    public float speed;
     private List<Vector2> PathToTarget = new List<Vector2>();
     private PathFinder PathFinder;
     private bool isMooving;
     private GameObject Player;
+    //позиции между которыми ходит 
     public Vector2 movePos1;
     public Vector2 movePos2;
-
+    float[] p1p2 = new float[2];
+    //время перед началом движения когда гг вышел из радиуса видимости
     public float timeToMove = 3;
     bool go1 = true;
-
-    public float speed;
-
-
     //атака
     [Header ("урон(коефициент перед умножением на лвл)")]
     public float damage;
@@ -30,12 +30,13 @@ public class Enemy : MonoBehaviour
     public float attackRange;
     public float startTimeBtwAttac;
     private float timeBtwAttac = 0;
+    //кого бить
     public LayerMask whatIsEnemies;
+    //чо дропает
     public GameObject HealthPotion, Scroll, Soull, GAmulet, BAmulet, YAmulet;
-    float[] p1p2 = new float[2];
+    //анимации
     public Animator anim;
-
-
+    //пепел после смерти
     public GameObject deathEffect;
     void Start()
     {

@@ -35,8 +35,11 @@ public class Projectile : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            playerHP.TakingDamage(damage);
-            Destroy(gameObject);
+            if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHP>().attackable)
+            {
+                playerHP.TakingDamage(damage);
+                Destroy(gameObject);
+            }
         }
 
         else if (other.gameObject.CompareTag("wall"))

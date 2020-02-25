@@ -2266,6 +2266,16 @@ PrefabInstance:
       propertyPath: attackPositiont
       value: 
       objectReference: {fileID: 1932179859}
+    - target: {fileID: 1007442211185112158, guid: 50203d4380845e5469453c0940806115,
+        type: 3}
+      propertyPath: maxRollDistance
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007442211185112158, guid: 50203d4380845e5469453c0940806115,
+        type: 3}
+      propertyPath: rollLayerMask.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 1007442211185112159, guid: 50203d4380845e5469453c0940806115,
         type: 3}
       propertyPath: m_Name

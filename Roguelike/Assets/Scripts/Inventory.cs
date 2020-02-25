@@ -21,7 +21,7 @@ public class Inventory : MonoBehaviour
     private void Start()
     {
         inActive = true;
-        selectedSlot = 0; //[0-9]
+        selectedSlot = 0;
         GetTextInfo(selectedSlot);
     }
 

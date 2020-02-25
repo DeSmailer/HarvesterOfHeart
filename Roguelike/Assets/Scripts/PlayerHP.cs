@@ -25,6 +25,8 @@ public class PlayerHP : MonoBehaviour
     private Color color1;
     private Color color2;
     private int changeColorTime = 5;
+
+    public bool attackable;
     void Start()
     {
         maxHP = 12f;
@@ -35,6 +37,7 @@ public class PlayerHP : MonoBehaviour
         color1 = new Color(255, 255, 255, 1f);
         color2 = new Color(255, 255, 255, 0f);
         fillImage.color = color1;
+        attackable = true;
     }
 
     private void Update()
@@ -83,13 +86,20 @@ public class PlayerHP : MonoBehaviour
     //получение урона и снижение его под бафами свитка
     public void TakingDamage(float damage)
     {
-        currentHP = currentHP - damage * currentDamageRatio;
-        DisplayHP();
-        if (currentHP <= 0)
+        if (attackable)
         {
-            //SceneManager.LoadScene("OnLoseScene");
+            currentHP = currentHP - damage * currentDamageRatio;
+            DisplayHP();
+            if (currentHP <= 0)
+            {
+                //SceneManager.LoadScene("OnLoseScene");
+            }
         }
-            
+        else
+        {
+            print("неуязвим");
+        }
+
     }
 
     //восполнение хп

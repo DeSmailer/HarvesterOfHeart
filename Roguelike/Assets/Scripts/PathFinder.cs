@@ -5,9 +5,12 @@ using System.Linq;
 public class PathFinder : MonoBehaviour
 {
     public List<Vector2> PathToTarget;
+
     List<Node> ChechedNodes = new List<Node>();
     List<Node> WaitingNodes = new List<Node>();
+
     private GameObject Target;
+
     public LayerMask SolidLayer;
 
     public List<Vector2> GetPath(Vector2 target)
