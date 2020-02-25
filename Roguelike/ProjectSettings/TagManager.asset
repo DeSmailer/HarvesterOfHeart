@@ -23,6 +23,7 @@ TagManager:
   - BAmulet
   - YAmulet
   - Menoreh
+  - Slot
   layers:
   - Default
   - TransparentFX
