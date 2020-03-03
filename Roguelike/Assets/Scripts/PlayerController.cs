@@ -61,6 +61,27 @@ public LayerMask rollLayerMask;
                     state = State.Rolling;
                     distanceTraveled = 0;
                     playerHP.attackable = false;
+
+                    if (goHorizontal < 0)
+                    {
+                        anim.SetInteger("state", 21);
+                    }
+                    else if (goHorizontal > 0)
+                    {
+                        anim.SetInteger("state", 20);
+                    }
+                    else if (goHorizontal == 0)
+                    {
+                        anim.SetInteger("state", 20);
+                    }
+                    if (goHorizontal == 0 && goVertical == 1)
+                    {
+                        anim.SetInteger("state", 21);
+                    }
+                    else if (goHorizontal == 0 && goVertical == -1)
+                    {
+                        anim.SetInteger("state", 21);
+                    }
                 }
                 break;
 
@@ -126,27 +147,26 @@ public LayerMask rollLayerMask;
                 if (distanceTraveled >= maxRollDistance)
                 {
                     state = State.Normal;
-                    ///*anim.SetInteger("state", 0);*/
-                    //if (goHorizontal < 0)
-                    //{
-                    //    anim.SetInteger("state", 9);
-                    //}
-                    //else if (goHorizontal > 0)
-                    //{
-                    //    anim.SetInteger("state", 10);
-                    //}
-                    //else if (goHorizontal == 0)
-                    //{
-                    //    anim.SetInteger("state", 10);
-                    //}
-                    //if (goHorizontal == 0 && goVertical == 1)
-                    //{
-                    //    anim.SetInteger("state", 9);
-                    //}
-                    //else if (goHorizontal == 0 && goVertical == -1)
-                    //{
-                    //    anim.SetInteger("state", 10);
-                    //}
+                    if (goHorizontal < 0)
+                    {
+                        anim.SetInteger("state", 10);
+                    }
+                    else if (goHorizontal > 0)
+                    {
+                        anim.SetInteger("state", 10);
+                    }
+                    else if (goHorizontal == 0)
+                    {
+                        anim.SetInteger("state", 10);
+                    }
+                    if (goHorizontal == 0 && goVertical == 1)
+                    {
+                        anim.SetInteger("state", 10);
+                    }
+                    else if (goHorizontal == 0 && goVertical == -1)
+                    {
+                        anim.SetInteger("state", 10);
+                    }
                     playerHP.attackable = true;
                 }
 

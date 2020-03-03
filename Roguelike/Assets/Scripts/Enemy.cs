@@ -188,7 +188,7 @@ public class Enemy : MonoBehaviour
         //если видит игрока
         if (player)
         {
-            if (Vector2.Distance(transform.position, Player.transform.position) > attackRange*7/8)
+            if (Vector2.Distance(transform.position, Player.transform.position) > attackRange*7/7.1f)
             {
                 PathToTarget = PathFinder.GetPath(Player.transform.position);
 
@@ -211,16 +211,20 @@ public class Enemy : MonoBehaviour
             }
 
             //атака
-            if (PathToTarget.Count == 0)
+            print("PathToTarget.Count " + PathToTarget.Count);
+            if (PathToTarget.Count==0)
             {
                 if (timeBtwAttac <= 0)
                 {
+                    print("должна быть атака");
                     if (Player.transform.position.x - transform.position.x < 0)
                     {
+                    print("1");
                         anim.SetInteger("state", 4);
                     }
                     else if (Player.transform.position.x - transform.position.x >= 0) 
                     {
+                    print("2");
                         anim.SetInteger("state", 3);
                     }
                 }

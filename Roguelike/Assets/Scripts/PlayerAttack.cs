@@ -241,22 +241,18 @@ public class PlayerAttack : MonoBehaviour
 
         if (angle >= -45 && angle <= 45)
         {
-            print("лево");
             return 1;
         }
         else if (angle >= 45 && angle <= 135)
         {
-            print("низ");
             return 2;
         }
         else if (angle >= 135 || angle <= -135)
         {
-            print("право");
             return 3;
         }
         else if (angle >= -135 && angle <= -45)
         {
-            print("верх");
             return 4;
         }
         else return 1;
