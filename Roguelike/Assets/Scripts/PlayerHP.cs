@@ -92,7 +92,7 @@ public class PlayerHP : MonoBehaviour
             DisplayHP();
             if (currentHP <= 0)
             {
-                //SceneManager.LoadScene("OnLoseScene");
+                SceneManager.LoadScene("OnLoseScene");
             }
         }
         else
