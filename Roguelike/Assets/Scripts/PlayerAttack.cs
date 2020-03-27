@@ -42,64 +42,37 @@ public class PlayerAttack : MonoBehaviour
                 UseSoul();
         }
 
-        if (timeBtwAttac <= 0)
+        if (Input.GetMouseButtonDown(0))
         {
-            if (Input.GetMouseButtonDown(0))
+            if (timeBtwAttac <= 0)
             {
-                if (attackCount == 1 && timeBtwAttacForAttack2 <= startTimeBtwAttac + 1)
-                {
-                    byte r = CalculateAngle();
-                    switch (r)
-                    {
-                        case 1:
-                            anim.SetInteger("state", 6);
-                            break;
-                        case 2:
-                            anim.SetInteger("state", 6);
-                            break;
-                        case 3:
-                            anim.SetInteger("state", 5);
-                            break;
-                        case 4:
-                            anim.SetInteger("state", 6);
-                            break;
-                        default:
-                            anim.SetInteger("state", 5);
-                            break;
-                    }
-                }
+                byte r = CalculateAngle();
 
-                else
+                switch (r)
                 {
-                    byte r = CalculateAngle();
-
-                    switch (r)
-                    {
-                        case 1:
-                            anim.SetInteger("state", 4);
-                            break;
-                        case 2:
-                            anim.SetInteger("state", 9);//3
-                            break;
-                        case 3:
-                            anim.SetInteger("state", 3);
-                            break;
-                        case 4:
-                            anim.SetInteger("state", 3);
-                            break;
-                        default:
-                            anim.SetInteger("state", 3);
-                            break;
-                    }
+                    case 1:
+                        anim.SetInteger("state", 4);
+                        break;
+                    case 2:
+                        anim.SetInteger("state", 9);//3
+                        break;
+                    case 3:
+                        anim.SetInteger("state", 3);
+                        break;
+                    case 4:
+                        anim.SetInteger("state", 3);
+                        break;
+                    default:
+                        anim.SetInteger("state", 3);
+                        break;
                 }
             }
-
             else
             {
-                timeBtwAttacForAttack2 += Time.deltaTime;
+                timeBtwAttac -= Time.deltaTime;
             }
         }
-        else
+        else if(timeBtwAttac>0)
         {
             timeBtwAttac -= Time.deltaTime;
         }
@@ -194,16 +167,34 @@ public class PlayerAttack : MonoBehaviour
     public void Attack1()
     {
         Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+        print(enemiesToDamage.Length);
         for (int i = 0; i < enemiesToDamage.Length; i++)
         {
-
             if (enemiesToDamage[i].GetComponent<Enemy>() != null)
+            {
                 enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(currentDamage);
-            if (enemiesToDamage[i].GetComponent<Boss1Enemy>() != null)
+                print("Enemy");
+            }
+            else if (enemiesToDamage[i].GetComponent<SmallEnemy>() != null)
+            {
+                enemiesToDamage[i].GetComponent<SmallEnemy>().TakeDamage(currentDamage);
+                print("SmallEnemy");
+            } 
+            else if (enemiesToDamage[i].GetComponent<Boss1Enemy>() != null)
+            {
                 enemiesToDamage[i].GetComponent<Boss1Enemy>().TakeDamage(currentDamage);
-            if (enemiesToDamage[i].GetComponent<Boss2Enemy>() != null)
+                print("Boss1Enemy");
+            }
+            else if (enemiesToDamage[i].GetComponent<Boss2Enemy>() != null)
+            {
                 enemiesToDamage[i].GetComponent<Boss2Enemy>().TakeDamage(currentDamage);
-
+                print("Boss2Enemy");
+            }
+            else if (enemiesToDamage[i].GetComponent<Boss3Enemy>() != null)
+            {
+                enemiesToDamage[i].GetComponent<Boss3Enemy>().TakeDamage(currentDamage);
+                print("Boss3Enemy");
+            }
         }
     }
 
@@ -213,24 +204,24 @@ public class PlayerAttack : MonoBehaviour
     }
 
 
-    public void CheckStartTimeBtwAttac2()
-    {
-        if (timeBtwAttacForAttack2 <= startTimeBtwAttac + 1)
-        {
-            attackCount++;
-            timeBtwAttacForAttack2 = 0;
-        }
-        else
-        {
-            attackCount = 0;
-            timeBtwAttacForAttack2 = 0;
-        }
-    }
-    public void SetStartTimeBtwAttac2()
-    {
-        attackCount = 0;
-        timeBtwAttacForAttack2 = 0;
-    }
+    //public void CheckStartTimeBtwAttac2()
+    //{
+    //    if (timeBtwAttacForAttack2 <= startTimeBtwAttac + 1)
+    //    {
+    //        attackCount++;
+    //        timeBtwAttacForAttack2 = 0;
+    //    }
+    //    else
+    //    {
+    //        attackCount = 0;
+    //        timeBtwAttacForAttack2 = 0;
+    //    }
+    //}
+    //public void SetStartTimeBtwAttac2()
+    //{
+    //    attackCount = 0;
+    //    timeBtwAttacForAttack2 = 0;
+    //}
     private byte CalculateAngle()
     {
         Vector2 playerPos = transform.position;

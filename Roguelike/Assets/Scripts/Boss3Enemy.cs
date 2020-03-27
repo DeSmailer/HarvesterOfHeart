@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Boss1Enemy : MonoBehaviour
+public class Boss3Enemy : MonoBehaviour
 {
     //движение
     public float speed;
@@ -14,7 +14,7 @@ public class Boss1Enemy : MonoBehaviour
     //путь
     private List<Vector2> PathToPlayer = new List<Vector2>();
     private PathFinder PathFinder;
-    private bool isMooving;
+    private bool isMoving;
     //игрока ищет
     public GameObject Player;
     //урон
@@ -22,21 +22,20 @@ public class Boss1Enemy : MonoBehaviour
     public LayerMask whatIsEnemies;
     //хп гг
     private PlayerHP playerHP;
+    private bool isImpulse = false;
     //простая атака
     public float startTimeBtwAttac;
-    public float timeBtwAttac = 3;
-    public float offset;
-    public GameObject womenBeam;
+    public float timeBtwAttac = 0;
+    public GameObject SpawnMob;
     //время перед сплеш атакой
     public float startTimeToSplashAttack;
     private float timeToSplashAttack;
-    public GameObject womenBeamSplash;
-    public GameObject attackPositiont;
+    public GameObject splashAttackPositiont;
     //что дропает
     public GameObject HealthPotion, Scroll, Soull, GAmulet, BAmulet, YAmulet;
     //анимации
     public Animator anim;
-
+    private LevelGenerator levelGenerator;
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -45,55 +44,60 @@ public class Boss1Enemy : MonoBehaviour
         {
             PathFinder = GetComponent<PathFinder>();
             PathToPlayer = PathFinder.GetPath(Player.transform.position);
-            isMooving = true;
+            isMoving = true;
         }
         damage = 3 * LevelGenerator.LVL;
         playerHP = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHP>();
-        maxHP = currentHP = 40 *( LevelGenerator.LVL + LevelGenerator.LVL/3);
+        maxHP = currentHP = 40 * (LevelGenerator.LVL + LevelGenerator.LVL / 3);
         speed = Random.Range(1f, 3f);
         DisplayHP();
         anim = GetComponent<Animator>();
+        levelGenerator = GameObject.FindGameObjectWithTag("levelGenerator").GetComponent<LevelGenerator>();
     }
 
 
     void Update()
     {
-        
 
         if (Player == null) return;
-        //удар выстрел лучем 
+        //спавн мелкого моба
         if (timeBtwAttac <= 0)
         {
-            anim.SetInteger("state", 1);
+            Shoot();
+            //anim.SetInteger("state", 1);
+            SetStartTime();
         }
         else
         {
-            anim.SetInteger("state", 0);
+            //anim.SetInteger("state", 0);
             timeBtwAttac -= Time.deltaTime;
         }
-        //подходит на 4 и стоит
-        if (Vector2.Distance(transform.position, Player.transform.position) > 1.5f) 
+        //подходит на 2 и стоит
+        if (Vector2.Distance(transform.position, Player.transform.position) > 2f)
         {
             PathToPlayer = PathFinder.GetPath(Player.transform.position);
 
-            isMooving = true;
+            isMoving = true;
 
         }
         else
         {
-            isMooving = false;
+            isMoving = false;
         }
 
 
-        //если ты под ангелком стоишь больше старт секунд и расстояние меньше 1.5 то на голову сплеш
-        if (Vector2.Distance(transform.position, Player.transform.position) < 0.7f)
+        //если ты под некром стоишь больше старт секунд и расстояние меньше 1.7 то отталкивает
+        if (Vector2.Distance(transform.position, Player.transform.position) < 1.7f)
         {
             timeToSplashAttack += Time.deltaTime;
             if (timeToSplashAttack >= startTimeToSplashAttack)
             {
-
-                anim.SetInteger("state", 2);
-                timeToSplashAttack = 0;
+                GameObject player = GameObject.FindGameObjectWithTag("Player");
+                SplashShoot(new Vector2(player.transform.position.x - splashAttackPositiont.transform.position.x, player.transform.position.y - splashAttackPositiont.transform.position.y)*2);
+                //player.GetComponent<Rigidbody2D>().AddForce(new Vector2(player.transform.position.x - splashAttackPositiont.transform.position.x, player.transform.position.y - splashAttackPositiont.transform.position.y)*3000);                              
+                ////anim.SetInteger("state", 2);
+                //timeToSplashAttack = 0;
+                print($"BOOM отталкнул {new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y)*10}");
             }
         }
         else
@@ -102,7 +106,7 @@ public class Boss1Enemy : MonoBehaviour
         }
 
 
-        if (isMooving)
+        if (isMoving)
         {
             if (Vector2.Distance(transform.position, PathToPlayer[PathToPlayer.Count - 1]) > 0.1f)
             {
@@ -111,29 +115,32 @@ public class Boss1Enemy : MonoBehaviour
             }
             else
             {
-                isMooving = false;
+                isMoving = false;
             }
         }
         else
         {
             Player = GameObject.FindGameObjectWithTag("Player");
             PathToPlayer = PathFinder.GetPath(Player.transform.position);
-            isMooving = true;
+            isMoving = true;
         }
-
-
     }
     void Shoot()
     {
-        //Transform attackPos = GameObject.FindGameObjectWithTag("Player").transform;
-        Instantiate(womenBeam,new Vector3( Random.Range(4,12), 7.31f, -95), Quaternion.identity);
+        //полы от 3 до 11 во все стороны
+        Instantiate(SpawnMob, new Vector3(Random.Range((int)3, (int)11), Random.Range((int)3, (int)11), -95), Quaternion.identity);
+        levelGenerator.MobCountOnLvl++;
+        //print(levelGenerator.MobCountOnLvl);
     }
 
-    void SplashShoot()
+    void SplashShoot(Vector3 vector)
     {
-        Instantiate(womenBeamSplash, new Vector3(attackPositiont.transform.position.x, attackPositiont.transform.position.y, -95), Quaternion.identity);
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (Vector2.Distance(splashAttackPositiont.transform.position, player.transform.position) < 2.7)
+            player.transform.Translate(vector * 1 * Time.deltaTime);
+        //Instantiate(womenBeamSplash, new Vector3(attackPositiont.transform.position.x, splashAttackPositiont.transform.position.y, -95), Quaternion.identity);
     }
-    
+
     private void DisplayHP()
     {
         float HPSlider = currentHP / maxHP;
@@ -152,7 +159,6 @@ public class Boss1Enemy : MonoBehaviour
             {
                 Drop();
             }
-
             GameObject.FindGameObjectWithTag("levelGenerator").GetComponent<LevelGenerator>().DecreaseMobCountOnLvl();
             RIP();
         }
@@ -227,4 +233,6 @@ public class Boss1Enemy : MonoBehaviour
     {
         timeBtwAttac = startTimeBtwAttac;
     }
+
 }
+

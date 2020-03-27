@@ -14,7 +14,7 @@ public class LevelGenerator : MonoBehaviour
     float worldUnitsInOneGridCell = 1;
         
     enum Mobs { mob1, boss1, boss2, boss3 };
-    public GameObject portal, mob1, boss1, boss2;
+    public GameObject portal, mob1, boss1, boss2, boss3;
     private GameObject player;
 
     public float distance;
@@ -717,7 +717,7 @@ public class LevelGenerator : MonoBehaviour
             }
             else if (LVL == 9)
             {
-                Instantiate(boss1, new Vector3(10, 10, -89), Quaternion.identity);
+                Instantiate(boss3, new Vector3(10, 10, -89), Quaternion.identity);
                 MobCountOnLvl++;
             }
             else

@@ -10,14 +10,14 @@ public class Projectile : MonoBehaviour
     public float damage;
     public float speed;
     private PlayerHP playerHP;
-
-
-
+    private Vector3 V = new Vector3(0, 0, -90);
+    public float smoothTime = 0.9F;
     void Start()
     {
         Player = GameObject.FindWithTag("Player").transform.position;
         damage = 5 * LevelGenerator.LVL;
         playerHP = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHP>();
+        print(Player);
     }
 
 

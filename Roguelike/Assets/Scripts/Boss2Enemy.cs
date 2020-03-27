@@ -94,54 +94,7 @@ public class Boss2Enemy : MonoBehaviour
 
             for (int i = 0; i < 5; i++)
             {
-                Vector3 itemDropPos;
-                int r = (int)Random.Range(0f, 4f);
-
-                if (r == 0)
-                {
-                    itemDropPos = new Vector3(transform.position.x + Random.Range(-0.25f, 0.25f), transform.position.y + Random.Range(-0.25f, 0.25f), -87);
-                    Instantiate(HealthPotion, itemDropPos, Quaternion.identity);
-                }
-
-                else if (r == 1)
-                {
-                    itemDropPos = new Vector3(transform.position.x + Random.Range(-0.25f, 0.25f), transform.position.y + Random.Range(-0.25f, 0.25f), -87);
-                    Instantiate(Scroll, itemDropPos, Quaternion.identity);
-                }
-
-                else if (r == 2)
-                {
-                    itemDropPos = new Vector3(transform.position.x + Random.Range(-0.25f, 0.25f), transform.position.y + Random.Range(-0.25f, 0.25f), -87);
-                    Instantiate(Soull, itemDropPos, Quaternion.identity);
-                }
-
-                else if (r == 3)
-                {
-                    itemDropPos = new Vector3(transform.position.x + Random.Range(-0.25f, 0.25f), transform.position.y + Random.Range(-0.25f, 0.25f), -87);
-                    Instantiate(HealthPotion, itemDropPos, Quaternion.identity);
-                }
-            }
-            Vector3 itemDropPos1;
-            float r1 = Random.Range(0f, 1f);
-            if (r1 <= DropAmuletChance(3, AmuletBuff.GdropCount, AmuletBuff.countDeadMobs))
-            {
-                itemDropPos1 = new Vector3(transform.position.x + Random.Range(-0.25f, 0.25f), transform.position.y + Random.Range(-0.25f, 0.25f), -87);
-                Instantiate(GAmulet, itemDropPos1, Quaternion.identity);
-                AmuletBuff.GdropCount++;
-            }
-            r1 = Random.Range(0f, 1f);
-            if (r1 <= DropAmuletChance(2, AmuletBuff.BdropCount, AmuletBuff.countDeadMobs))
-            {
-                itemDropPos1 = new Vector3(transform.position.x + Random.Range(-0.25f, 0.25f), transform.position.y + Random.Range(-0.25f, 0.25f), -87);
-                Instantiate(BAmulet, itemDropPos1, Quaternion.identity);
-                AmuletBuff.BdropCount++;
-            }
-            r1 = Random.Range(0f, 1f);
-            if (r1 <= DropAmuletChance(2, AmuletBuff.YdropCount, AmuletBuff.countDeadMobs))
-            {
-                itemDropPos1 = new Vector3(transform.position.x + Random.Range(-0.25f, 0.25f), transform.position.y + Random.Range(-0.25f, 0.25f), -87);
-                Instantiate(YAmulet, itemDropPos1, Quaternion.identity);
-                AmuletBuff.YdropCount++;
+                Drop();
             }
 
             anim.SetInteger("state", 3);
@@ -151,10 +104,65 @@ public class Boss2Enemy : MonoBehaviour
 
         }
     }
+
+    void Drop()
+    {
+        Vector3 itemDropPos;
+        float r = (int)Random.Range(0f, 4f);
+
+        if (r == 0)
+        {
+            itemDropPos = new Vector3(transform.position.x + Random.Range(-0.25f, 0.25f), transform.position.y + Random.Range(-0.25f, 0.25f), -87);
+            Instantiate(HealthPotion, itemDropPos, Quaternion.identity);
+        }
+
+        else if (r == 1)
+        {
+            itemDropPos = new Vector3(transform.position.x + Random.Range(-0.25f, 0.25f), transform.position.y + Random.Range(-0.25f, 0.25f), -87);
+            Instantiate(Scroll, itemDropPos, Quaternion.identity);
+        }
+
+        else if (r == 2)
+        {
+            itemDropPos = new Vector3(transform.position.x + Random.Range(-0.25f, 0.25f), transform.position.y + Random.Range(-0.25f, 0.25f), -87);
+            Instantiate(Soull, itemDropPos, Quaternion.identity);
+        }
+
+        else if (r == 3)
+        {
+            itemDropPos = new Vector3(transform.position.x + Random.Range(-0.25f, 0.25f), transform.position.y + Random.Range(-0.25f, 0.25f), -87);
+            Instantiate(HealthPotion, itemDropPos, Quaternion.identity);
+        }
+
+        Vector3 itemDropPos1;
+        float r1 = Random.Range(0f, 1f);
+        if (r1 <= DropAmuletChance(3, AmuletBuff.GdropCount, AmuletBuff.countDeadMobs))
+        {
+            itemDropPos1 = new Vector3(transform.position.x + Random.Range(-0.25f, 0.25f), transform.position.y + Random.Range(-0.25f, 0.25f), -87);
+            Instantiate(GAmulet, itemDropPos1, Quaternion.identity);
+            AmuletBuff.GdropCount++;
+        }
+        r1 = Random.Range(0f, 1f);
+        if (r1 <= DropAmuletChance(2, AmuletBuff.BdropCount, AmuletBuff.countDeadMobs))
+        {
+            itemDropPos1 = new Vector3(transform.position.x + Random.Range(-0.25f, 0.25f), transform.position.y + Random.Range(-0.25f, 0.25f), -87);
+            Instantiate(BAmulet, itemDropPos1, Quaternion.identity);
+            AmuletBuff.BdropCount++;
+        }
+        r1 = Random.Range(0f, 1f);
+        if (r1 <= DropAmuletChance(2, AmuletBuff.YdropCount, AmuletBuff.countDeadMobs))
+        {
+            itemDropPos1 = new Vector3(transform.position.x + Random.Range(-0.25f, 0.25f), transform.position.y + Random.Range(-0.25f, 0.25f), -87);
+            Instantiate(YAmulet, itemDropPos1, Quaternion.identity);
+            AmuletBuff.YdropCount++;
+        }
+    }
+
     float DropAmuletChance(float k, float dropCount, float countDeadMobs)
     {
         return ((k - dropCount) / (100 - countDeadMobs)) * 1.4f * (k - dropCount);
     }
+
     private void DisplayHP()
     {
         float HPSlider = currentHP / maxHP;

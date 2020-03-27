@@ -1759,6 +1759,7 @@ MonoBehaviour:
   mob1: {fileID: 169777143847699898, guid: 8adbaa1e2f8340245986dc71e8f0e241, type: 3}
   boss1: {fileID: 169777143847699898, guid: 2438da9125561d642b588f69532054c7, type: 3}
   boss2: {fileID: 169777143847699898, guid: 76bb4554dbd502945a82fc2a62a3c0e6, type: 3}
+  boss3: {fileID: 3097294578120041529, guid: 35d4711a6c3980c4c8c709f779aee730, type: 3}
   distance: 2
   MobCountOnLvl: 0
   floor1: {fileID: 3004955312243891347, guid: 68b31a14ad185744d8d89aee02909c07, type: 3}

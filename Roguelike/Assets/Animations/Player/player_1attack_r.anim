@@ -273,14 +273,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.36666667
-    functionName: CheckStartTimeBtwAttac2
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.36666667
+  - time: 0.35
     functionName: Attack1
     data: 
     objectReferenceParameter: {fileID: 0}

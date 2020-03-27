@@ -107,7 +107,6 @@ public class PickUp : MonoBehaviour
             }
             else
             {
-
                 position.y = transform.position.y + 0.05f;
                 transform.position = position;
             }
