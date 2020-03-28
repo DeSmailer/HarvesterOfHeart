@@ -65,8 +65,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.16}
-  m_SizeDelta: {x: 156.122, y: 14.963}
+  m_AnchoredPosition: {x: -0.073, y: -0.49}
+  m_SizeDelta: {x: 119.5827, y: 11.461}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7204327838717174190
 MonoBehaviour:
@@ -184,7 +184,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3097294578120041529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.52, y: -1.16, z: -89}
+  m_LocalPosition: {x: 0, y: 0, z: -89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1582757054484339506}
@@ -231,7 +231,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 94180a480ccedf241b30806d6873cc58, type: 3}
+  m_Sprite: {fileID: -5277628559031361115, guid: 0941363a8832aad40b66faf4a9c497e7,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -282,7 +283,7 @@ MonoBehaviour:
   timeBtwAttac: 0
   SpawnMob: {fileID: 6479657402377729086, guid: b97a0433339ddc0499e6dd5c862ceb3b,
     type: 3}
-  startTimeToSplashAttack: 5
+  startTimeToSplashAttack: 6
   splashAttackPositiont: {fileID: 1526576574776943653}
   HealthPotion: {fileID: 8973415646572100677, guid: 35ab7c699e488444c94a801e965b3a09,
     type: 3}
@@ -329,8 +330,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5915615, y: 0.5593913}
-    oldSize: {x: 2.5, y: 2.5}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.51250005, y: 1.0360943}
     newSize: {x: 1.54, y: 1.5333333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -349,7 +350,7 @@ Animator:
   m_GameObject: {fileID: 3097294578120041529}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e0a1410a51a71d34caa1635851c8bbdc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

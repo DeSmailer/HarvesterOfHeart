@@ -212,28 +212,40 @@ public class Enemy : MonoBehaviour
 
             //атака
             print("PathToTarget.Count " + PathToTarget.Count);
-            if (PathToTarget.Count==0)
+            if (PathToTarget.Count == 0)
             {
-                if (timeBtwAttac <= 0)
+                if (Vector2.Distance(transform.position, PathToTarget[PathToTarget.Count - 1]) >= attackRange)
                 {
-                    print("должна быть атака");
-                    if (Player.transform.position.x - transform.position.x < 0)
-                    {
-                    print("1");
-                        anim.SetInteger("state", 4);
-                    }
-                    else if (Player.transform.position.x - transform.position.x >= 0) 
-                    {
-                    print("2");
-                        anim.SetInteger("state", 3);
-                    }
+                    transform.Translate(Player.transform.position * Time.deltaTime*0.5f, Space.World);
+                    return;
                 }
                 else
                 {
-                    anim.SetInteger("state", 0);
-                    timeBtwAttac -= Time.deltaTime;
-                }
+                    if (timeBtwAttac <= 0)
+                    {
+                        print("должна быть атака");
+                        if (Player.transform.position.x - transform.position.x < 0)
+                        {
+                            print("1");
+                            anim.SetInteger("state", 4);
+                        }
+                        else if (Player.transform.position.x - transform.position.x >= 0)
+                        {
+                            print("2");
+                            anim.SetInteger("state", 3);
+                        }
+                    }
+                    else
+                    {
+                        anim.SetInteger("state", 0);
+                        timeBtwAttac -= Time.deltaTime;
+                    }
 
+                }
+            }
+            else
+            {
+                timeBtwAttac -= Time.deltaTime;
             }
 
             if (isMooving)

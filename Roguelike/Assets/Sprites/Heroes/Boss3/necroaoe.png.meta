@@ -1,7 +1,94 @@
 fileFormatVersion: 2
 guid: b3afaeb7e4e1b0c41bca5b01e9523505
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5113887613935788695
+    second: necroaoe_0
+  - first:
+      213: 4481896953477780447
+    second: necroaoe_1
+  - first:
+      213: 2449379730575249161
+    second: necroaoe_2
+  - first:
+      213: -7077325704868757238
+    second: necroaoe_3
+  - first:
+      213: -5669086047656016238
+    second: necroaoe_4
+  - first:
+      213: -4038324275053563396
+    second: necroaoe_5
+  - first:
+      213: -8862824621746137043
+    second: necroaoe_6
+  - first:
+      213: -2535717442819845506
+    second: necroaoe_7
+  - first:
+      213: 3910332112782579028
+    second: necroaoe_8
+  - first:
+      213: -6457705795394881318
+    second: necroaoe_9
+  - first:
+      213: 765550013788275011
+    second: necroaoe_10
+  - first:
+      213: -3583442467446881408
+    second: necroaoe_11
+  - first:
+      213: 9077695895715730794
+    second: necroaoe_12
+  - first:
+      213: 3770947505189779829
+    second: necroaoe_13
+  - first:
+      213: -313240488512376908
+    second: necroaoe_14
+  - first:
+      213: -4818487207747712825
+    second: necroaoe_15
+  - first:
+      213: 2760188462724793411
+    second: necroaoe_16
+  - first:
+      213: 3788361340174652703
+    second: necroaoe_17
+  - first:
+      213: -5341705156697960545
+    second: necroaoe_18
+  - first:
+      213: -4097198423673446598
+    second: necroaoe_19
+  - first:
+      213: -1855486377564382628
+    second: necroaoe_20
+  - first:
+      213: 2476864524464631048
+    second: necroaoe_21
+  - first:
+      213: -7108793398027490858
+    second: necroaoe_22
+  - first:
+      213: -1609699758239100707
+    second: necroaoe_23
+  - first:
+      213: -2739869030699049464
+    second: necroaoe_24
+  - first:
+      213: 117266291862466115
+    second: necroaoe_25
+  - first:
+      213: 541179360632695530
+    second: necroaoe_26
+  - first:
+      213: -8375846890734080396
+    second: necroaoe_27
+  - first:
+      213: 515814911589002293
+    second: necroaoe_28
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +127,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,9 +157,201 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: necroaoe_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 58
+        width: 452
+        height: 703
+      alignment: 9
+      pivot: {x: 0.5615493, y: 0.49301082}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d56164f42d709b0800000000000000
+      internalID: -5113887613935788695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroaoe_1
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 51
+        width: 346
+        height: 703
+      alignment: 9
+      pivot: {x: 0.5375091, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3d2f77885e23e30800000000000000
+      internalID: 4481896953477780447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroaoe_3
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 6
+        width: 421
+        height: 748
+      alignment: 9
+      pivot: {x: 0.47401583, y: 0.53337324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a018e89c4c948cd90800000000000000
+      internalID: -7077325704868757238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroaoe_4
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 0
+        width: 605
+        height: 900
+      alignment: 9
+      pivot: {x: 0.59, y: 0.45402643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2960758964c5351b0800000000000000
+      internalID: -5669086047656016238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroaoe_5
+      rect:
+        serializedVersion: 2
+        x: 3185
+        y: 0
+        width: 1195
+        height: 900
+      alignment: 9
+      pivot: {x: 0.5989585, y: 0.43764323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf17891c77df4f7c0800000000000000
+      internalID: -4038324275053563396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroaoe_6
+      rect:
+        serializedVersion: 2
+        x: 4473
+        y: 0
+        width: 1040
+        height: 900
+      alignment: 9
+      pivot: {x: 0.5291983, y: 0.44939002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d285c3ab6fbe00580800000000000000
+      internalID: -8862824621746137043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroaoe_9
+      rect:
+        serializedVersion: 2
+        x: 5571
+        y: 0
+        width: 823
+        height: 900
+      alignment: 9
+      pivot: {x: 0.5793632, y: 0.44793648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8b1812bce9166a0800000000000000
+      internalID: -6457705795394881318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: necroaoe_2
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 0
+        width: 1058
+        height: 900
+      alignment: 9
+      pivot: {x: 0.46446717, y: 0.44302243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fcaf833e1fdf120800000000000000
+      internalID: 2449379730575249161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

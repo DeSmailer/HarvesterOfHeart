@@ -64,7 +64,6 @@ public class Boss3Enemy : MonoBehaviour
         if (timeBtwAttac <= 0)
         {
             Shoot();
-            //anim.SetInteger("state", 1);
             SetStartTime();
         }
         else
@@ -76,12 +75,20 @@ public class Boss3Enemy : MonoBehaviour
         if (Vector2.Distance(transform.position, Player.transform.position) > 2f)
         {
             PathToPlayer = PathFinder.GetPath(Player.transform.position);
-
             isMoving = true;
+            if(transform.position.x< Player.transform.position.x)
+            {
+                anim.SetInteger("state", 2);
+            }
+            else
+            {
+                anim.SetInteger("state", 1);
+            }  
 
         }
         else
         {
+            anim.SetInteger("state", 0);
             isMoving = false;
         }
 
@@ -92,12 +99,13 @@ public class Boss3Enemy : MonoBehaviour
             timeToSplashAttack += Time.deltaTime;
             if (timeToSplashAttack >= startTimeToSplashAttack)
             {
-                GameObject player = GameObject.FindGameObjectWithTag("Player");
-                SplashShoot(new Vector2(player.transform.position.x - splashAttackPositiont.transform.position.x, player.transform.position.y - splashAttackPositiont.transform.position.y)*2);
-                //player.GetComponent<Rigidbody2D>().AddForce(new Vector2(player.transform.position.x - splashAttackPositiont.transform.position.x, player.transform.position.y - splashAttackPositiont.transform.position.y)*3000);                              
-                ////anim.SetInteger("state", 2);
-                //timeToSplashAttack = 0;
-                print($"BOOM отталкнул {new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y)*10}");
+                anim.SetInteger("state", 4);
+                //GameObject player = GameObject.FindGameObjectWithTag("Player");
+                //SplashShoot(new Vector2(player.transform.position.x - splashAttackPositiont.transform.position.x, player.transform.position.y - splashAttackPositiont.transform.position.y)*4);
+                ////player.GetComponent<Rigidbody2D>().AddForce(new Vector2(player.transform.position.x - splashAttackPositiont.transform.position.x, player.transform.position.y - splashAttackPositiont.transform.position.y)*3000);                              
+                //////anim.SetInteger("state", 2);
+                ////timeToSplashAttack = 0;
+                //print($"BOOM отталкнул {new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y)*20}");
             }
         }
         else
@@ -125,7 +133,7 @@ public class Boss3Enemy : MonoBehaviour
             isMoving = true;
         }
     }
-    void Shoot()
+    public void Shoot()
     {
         //полы от 3 до 11 во все стороны
         Instantiate(SpawnMob, new Vector3(Random.Range((int)3, (int)11), Random.Range((int)3, (int)11), -95), Quaternion.identity);
@@ -133,11 +141,11 @@ public class Boss3Enemy : MonoBehaviour
         //print(levelGenerator.MobCountOnLvl);
     }
 
-    void SplashShoot(Vector3 vector)
+    public void SplashShoot()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (Vector2.Distance(splashAttackPositiont.transform.position, player.transform.position) < 2.7)
-            player.transform.Translate(vector * 1 * Time.deltaTime);
+        if (Vector2.Distance(splashAttackPositiont.transform.position, player.transform.position) < 2.5)
+            player.transform.Translate(new Vector2(player.transform.position.x - splashAttackPositiont.transform.position.x, player.transform.position.y - splashAttackPositiont.transform.position.y) * 7 * Time.deltaTime);
         //Instantiate(womenBeamSplash, new Vector3(attackPositiont.transform.position.x, splashAttackPositiont.transform.position.y, -95), Quaternion.identity);
     }
 
