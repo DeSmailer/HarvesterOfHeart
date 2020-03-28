@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
     public Transform attackPos;
     public float attackRange;
     public float startTimeBtwAttac;
-    private float timeBtwAttac = 0;
+    public float timeBtwAttac = 0;
     //кого бить
     public LayerMask whatIsEnemies;
     //чо дропает
@@ -74,7 +74,7 @@ public class Enemy : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player");
 
         if (Player == null) return;
-
+        float dis = Vector2.Distance(transform.position, Player.transform.position);
         if (Vector2.Distance(transform.position, Player.transform.position) < 3f)
         {
             timeToMove = 3f;
@@ -188,7 +188,7 @@ public class Enemy : MonoBehaviour
         //если видит игрока
         if (player)
         {
-            if (Vector2.Distance(transform.position, Player.transform.position) > attackRange*7/7.1f)
+            if (Vector2.Distance(transform.position, Player.transform.position) > attackRange)
             {
                 PathToTarget = PathFinder.GetPath(Player.transform.position);
 
@@ -212,25 +212,27 @@ public class Enemy : MonoBehaviour
 
             //атака
             print("PathToTarget.Count " + PathToTarget.Count);
-            if (PathToTarget.Count == 0)
+            if (PathToTarget.Count == 0 || PathToTarget.Count == 1)
             {
-                if (Vector2.Distance(transform.position, PathToTarget[PathToTarget.Count - 1]) >= attackRange)
-                {
-                    transform.Translate(Player.transform.position * Time.deltaTime*0.5f, Space.World);
-                    return;
-                }
-                else
-                {
+                //if (Vector2.Distance(transform.position, PathToTarget[PathToTarget.Count - 1]) >= attackRange)
+                //{
+                //    transform.Translate(Player.transform.position, Space.World);
+                //    return;
+                //}
+                //else
+                //{
                     if (timeBtwAttac <= 0)
                     {
                         print("должна быть атака");
                         if (Player.transform.position.x - transform.position.x < 0)
                         {
+                            print(isMooving);
                             print("1");
                             anim.SetInteger("state", 4);
                         }
                         else if (Player.transform.position.x - transform.position.x >= 0)
                         {
+                            print(isMooving);
                             print("2");
                             anim.SetInteger("state", 3);
                         }
@@ -240,8 +242,6 @@ public class Enemy : MonoBehaviour
                         anim.SetInteger("state", 0);
                         timeBtwAttac -= Time.deltaTime;
                     }
-
-                }
             }
             else
             {
@@ -263,7 +263,6 @@ public class Enemy : MonoBehaviour
             else
             {
                 PathToTarget = PathFinder.GetPath(Player.transform.position);
-                anim.SetInteger("state", 0);
                 isMooving = true;
             }
         }

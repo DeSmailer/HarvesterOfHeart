@@ -148,7 +148,6 @@ public class SmallEnemy : MonoBehaviour
             else
             {
                 PathToTarget = PathFinder.GetPath(Player.transform.position);
-                anim.SetInteger("state", 0);
                 isMooving = true;
             }
         }
