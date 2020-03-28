@@ -72,7 +72,7 @@ public class PlayerAttack : MonoBehaviour
                 timeBtwAttac -= Time.deltaTime;
             }
         }
-        else if(timeBtwAttac>0)
+        else if (timeBtwAttac > 0)
         {
             timeBtwAttac -= Time.deltaTime;
         }
@@ -144,6 +144,20 @@ public class PlayerAttack : MonoBehaviour
 
         }
     }
+    public void UseSoul(int selSlot)
+    {
+        if (inventory.slots[selSlot].transform.GetChild(0).CompareTag("Soul"))
+        {
+            currentDamage = currentMaxDamage * 1.25f;
+            timeForSoul = 15f;
+            inventory.isFull[selSlot] = false;
+            foreach (Transform t in inventory.slots[selSlot].transform)
+            {
+                Destroy(t.gameObject);
+            }
+        }
+    }
+
     public void DamageBuff(float damaheBuff)
     {
         currentMaxDamage = MaxDamage * (1 + damaheBuff);

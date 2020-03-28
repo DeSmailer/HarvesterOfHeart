@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 2537070708816223500}
   - component: {fileID: 7092229473042076162}
   - component: {fileID: -3165085755471846056}
-  - component: {fileID: 4781878656359985340}
   m_Layer: 5
   m_Name: GreenAmulet
   m_TagString: GAmulet
@@ -148,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 8973415646572100677, guid: 343494dab2cbc3c4f88483b1f25959da, type: 3}
+  slotNumber: 0
   type: amulet
 --- !u!114 &-3165085755471846056
 MonoBehaviour:
@@ -161,16 +161,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1d5058774316b44cbdc668b0bb65e74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4781878656359985340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2537070708816223498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1027192774e18145811575e91e3a1de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  info: 

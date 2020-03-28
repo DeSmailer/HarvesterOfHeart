@@ -179,6 +179,31 @@ public class PlayerHP : MonoBehaviour
 
         }
     }
+    public void UseScroll(int selSlot)
+    {
+        for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length
+        {
+            if (inventory.slots[i].transform.childCount > 0)
+            {
+                if (inventory.slots[i].transform.GetChild(0).CompareTag("Scroll"))
+                {
+                    currentDamageRatio = currentMaxDamageRatio * 0.75f;
+                    timeForScroll = 15f;
+                    inventory.isFull[i] = false;
+                    foreach (Transform t in inventory.slots[i].transform)
+                    {
+                        Destroy(t.gameObject);
+                    }
+                    break;
+                }
+            }
+            else
+            {
+                continue;
+            }
+
+        }
+    }
 
     private void DisplayHP()
     {
