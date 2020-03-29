@@ -15,7 +15,10 @@ GameObject:
   - component: {fileID: 2537070708816223500}
   - component: {fileID: 7092229473042076162}
   - component: {fileID: 3878684131376594945}
-  - component: {fileID: 6315358886366033060}
+  - component: {fileID: 7179630003300806818}
+  - component: {fileID: 8156063874327697952}
+  - component: {fileID: 6123546454704086725}
+  - component: {fileID: 6633284865777207300}
   m_Layer: 5
   m_Name: YellowAmulet
   m_TagString: YAmulet
@@ -133,7 +136,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2537070708816223501}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6633284865777207300}
+        m_MethodName: Use
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7092229473042076162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1d5058774316b44cbdc668b0bb65e74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6315358886366033060
+--- !u!114 &7179630003300806818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,7 +183,102 @@ MonoBehaviour:
   m_GameObject: {fileID: 2537070708816223498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1027192774e18145811575e91e3a1de, type: 3}
+  m_Script: {fileID: 11500000, guid: ba83550edf22f7248b0485ccda6cd2f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  info: 
+  sprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  imageInfo: {fileID: 1900766665923897559, guid: b9ca3ccce428ae04896f3dc544b95bed,
+    type: 3}
+  itemTextInfo: {fileID: 0}
+--- !u!114 &8156063874327697952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537070708816223498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7179630003300806818}
+          m_MethodName: GetTextInfo
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7179630003300806818}
+          m_MethodName: DestroyTextInfo
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6633284865777207300}
+          m_MethodName: Drop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &6123546454704086725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537070708816223498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba83550edf22f7248b0485ccda6cd2f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  imageInfo: {fileID: 1900766665923897559, guid: b9ca3ccce428ae04896f3dc544b95bed,
+    type: 3}
+  itemTextInfo: {fileID: 0}
+--- !u!114 &6633284865777207300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537070708816223498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6942fe96ab469d94891e06e556d64c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

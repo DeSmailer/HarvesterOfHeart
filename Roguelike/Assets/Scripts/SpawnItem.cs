@@ -6,7 +6,7 @@ public class SpawnItem : MonoBehaviour
 {
     public GameObject item;
     private Transform player;
-    public int slotNumber;
+    //public int slotNumber;
     public string type;
     private void Start()
     {
@@ -17,4 +17,8 @@ public class SpawnItem : MonoBehaviour
         Vector3 playerPos = new Vector3(player.position.x, player.position.y - 0.15f, -87);
         Instantiate(item, playerPos, Quaternion.identity);
     }
+    //public void SetSlotNumber(int i)
+    //{
+    //    slotNumber = i;
+    //}
 }

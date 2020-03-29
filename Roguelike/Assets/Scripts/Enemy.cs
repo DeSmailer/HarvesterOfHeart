@@ -211,9 +211,9 @@ public class Enemy : MonoBehaviour
             }
 
             //атака
-            print("PathToTarget.Count " + PathToTarget.Count);
             if (PathToTarget.Count == 0 || PathToTarget.Count == 1)
             {
+
                 //if (Vector2.Distance(transform.position, PathToTarget[PathToTarget.Count - 1]) >= attackRange)
                 //{
                 //    transform.Translate(Player.transform.position, Space.World);
@@ -221,27 +221,23 @@ public class Enemy : MonoBehaviour
                 //}
                 //else
                 //{
-                    if (timeBtwAttac <= 0)
+                
+                if (timeBtwAttac <= 0)
+                {
+                    if (Player.transform.position.x - transform.position.x < 0)
                     {
-                        print("должна быть атака");
-                        if (Player.transform.position.x - transform.position.x < 0)
-                        {
-                            print(isMooving);
-                            print("1");
-                            anim.SetInteger("state", 4);
-                        }
-                        else if (Player.transform.position.x - transform.position.x >= 0)
-                        {
-                            print(isMooving);
-                            print("2");
-                            anim.SetInteger("state", 3);
-                        }
+                        anim.SetInteger("state", 4);
                     }
-                    else
+                    else if (Player.transform.position.x - transform.position.x >= 0)
                     {
-                        anim.SetInteger("state", 0);
-                        timeBtwAttac -= Time.deltaTime;
+                        anim.SetInteger("state", 3);
                     }
+                }
+                else
+                {
+                    anim.SetInteger("state", 0);
+                    timeBtwAttac -= Time.deltaTime;
+                }
             }
             else
             {

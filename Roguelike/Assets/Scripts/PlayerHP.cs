@@ -63,11 +63,10 @@ public class PlayerHP : MonoBehaviour
         }
         if (Input.GetKeyUp("1")) 
         {
-            UseHPPotionOnKey();
+            UseHPPotion();
         }
         if (Input.GetKeyUp("3"))
         {
-            if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttack>().timeForSoul <= 0 && timeForScroll <= 0)
                 UseScroll();
         }
     }
@@ -98,18 +97,7 @@ public class PlayerHP : MonoBehaviour
     }
 
     //восполнение хп
-
     public void UseHPPotion()
-    {
-        currentHP += maxHP * 0.05f;
-        if (currentHP > currentMaxHP)
-        {
-            currentHP = currentMaxHP;
-        }
-        DisplayHP();
-    }
-
-    public void UseHPPotionOnKey()
     {
         for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length
         {
@@ -117,7 +105,12 @@ public class PlayerHP : MonoBehaviour
             {
                 if (inventory.slots[i].transform.GetChild(0).CompareTag("HealthPotion"))
                 {
-                    UseHPPotion();
+                    currentHP += maxHP * 0.05f;
+                    if (currentHP > currentMaxHP)
+                    {
+                        currentHP = currentMaxHP;
+                    }
+                    DisplayHP();
                     inventory.isFull[i] = false;
                     foreach (Transform t in inventory.slots[i].transform)
                     {
@@ -135,7 +128,27 @@ public class PlayerHP : MonoBehaviour
         }
         DisplayHP();
     }
-
+    public void UseHPPotion(int selSlot)
+    {
+        if (inventory.slots[selSlot].transform.childCount > 0)
+        {
+            if (inventory.slots[selSlot].transform.GetChild(0).CompareTag("HealthPotion"))
+            {
+                currentHP += maxHP * 0.05f;
+                if (currentHP > currentMaxHP)
+                {
+                    currentHP = currentMaxHP;
+                }
+                DisplayHP();
+                inventory.isFull[selSlot] = false;
+                foreach (Transform t in inventory.slots[selSlot].transform)
+                {
+                    Destroy(t.gameObject);
+                }
+            }
+        }
+        DisplayHP();
+    }
     //public void UseHPPotionOnButton()
     //{
     //    GameObject parent = transform.parent.gameObject;
@@ -149,61 +162,60 @@ public class PlayerHP : MonoBehaviour
     //            Destroy(t.gameObject);
     //        }
     //    }
-        
-        
+
+
     //    DisplayHP();
     //}
 
     public void UseScroll()
     {
-        for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttack>().timeForSoul <= 0 && timeForScroll <= 0)
         {
-            if (inventory.slots[i].transform.childCount > 0)
+            for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length
             {
-                if (inventory.slots[i].transform.GetChild(0).CompareTag("Scroll"))
+                if (inventory.slots[i].transform.childCount > 0)
                 {
-                    currentDamageRatio = currentMaxDamageRatio * 0.75f;
-                    timeForScroll = 15f;
-                    inventory.isFull[i] = false;
-                    foreach (Transform t in inventory.slots[i].transform)
+                    if (inventory.slots[i].transform.GetChild(0).CompareTag("Scroll"))
                     {
-                        Destroy(t.gameObject);
+                        currentDamageRatio = currentMaxDamageRatio * 0.75f;
+                        timeForScroll = 15f;
+                        inventory.isFull[i] = false;
+                        foreach (Transform t in inventory.slots[i].transform)
+                        {
+                            Destroy(t.gameObject);
+                        }
+                        break;
                     }
-                    break;
                 }
-            }
-            else
-            {
-                continue;
-            }
+                else
+                {
+                    continue;
+                }
 
+            }
         }
     }
+
     public void UseScroll(int selSlot)
     {
-        for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttack>().timeForSoul <= 0 && timeForScroll <= 0)
         {
-            if (inventory.slots[i].transform.childCount > 0)
+            if (inventory.slots[selSlot].transform.childCount > 0)
             {
-                if (inventory.slots[i].transform.GetChild(0).CompareTag("Scroll"))
+                if (inventory.slots[selSlot].transform.GetChild(0).CompareTag("Scroll"))
                 {
                     currentDamageRatio = currentMaxDamageRatio * 0.75f;
                     timeForScroll = 15f;
-                    inventory.isFull[i] = false;
-                    foreach (Transform t in inventory.slots[i].transform)
+                    inventory.isFull[selSlot] = false;
+                    foreach (Transform t in inventory.slots[selSlot].transform)
                     {
                         Destroy(t.gameObject);
                     }
-                    break;
                 }
             }
-            else
-            {
-                continue;
-            }
-
         }
-    }
+    }        
+    
 
     private void DisplayHP()
     {

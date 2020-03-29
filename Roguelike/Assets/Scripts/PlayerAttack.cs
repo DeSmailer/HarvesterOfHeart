@@ -38,7 +38,6 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetKeyUp("2"))
         {
-            if (timeForSoul <= 0 && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHP>().timeForScroll <= 0)
                 UseSoul();
         }
 
@@ -121,39 +120,48 @@ public class PlayerAttack : MonoBehaviour
     //}
     public void UseSoul()
     {
-        for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length
+        if (timeForSoul <= 0 && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHP>().timeForScroll <= 0)
         {
-            if (inventory.slots[i].transform.childCount > 0)
+            for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length
             {
-                if (inventory.slots[i].transform.GetChild(0).CompareTag("Soul"))
+                if (inventory.slots[i].transform.childCount > 0)
                 {
-                    currentDamage = currentMaxDamage * 1.25f;
-                    timeForSoul = 15f;
-                    inventory.isFull[i] = false;
-                    foreach (Transform t in inventory.slots[i].transform)
+                    if (inventory.slots[i].transform.GetChild(0).CompareTag("Soul"))
                     {
-                        Destroy(t.gameObject);
+                        currentDamage = currentMaxDamage * 1.25f;
+                        timeForSoul = 15f;
+                        inventory.isFull[i] = false;
+                        foreach (Transform t in inventory.slots[i].transform)
+                        {
+                            Destroy(t.gameObject);
+                        }
+                        break;
                     }
-                    break;
                 }
-            }
-            else
-            {
-                continue;
-            }
+                else
+                {
+                    continue;
+                }
 
+            }
         }
     }
     public void UseSoul(int selSlot)
     {
-        if (inventory.slots[selSlot].transform.GetChild(0).CompareTag("Soul"))
+        if (timeForSoul <= 0 && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHP>().timeForScroll <= 0)
         {
-            currentDamage = currentMaxDamage * 1.25f;
-            timeForSoul = 15f;
-            inventory.isFull[selSlot] = false;
-            foreach (Transform t in inventory.slots[selSlot].transform)
+            if (inventory.slots[selSlot].transform.childCount > 0)
             {
-                Destroy(t.gameObject);
+                if (inventory.slots[selSlot].transform.GetChild(0).CompareTag("Soul"))
+                {
+                    currentDamage = currentMaxDamage * 1.25f;
+                    timeForSoul = 15f;
+                    inventory.isFull[selSlot] = false;
+                    foreach (Transform t in inventory.slots[selSlot].transform)
+                    {
+                        Destroy(t.gameObject);
+                    }
+                }
             }
         }
     }
@@ -186,27 +194,22 @@ public class PlayerAttack : MonoBehaviour
             if (enemiesToDamage[i].GetComponent<Enemy>() != null)
             {
                 enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(currentDamage);
-                print("Enemy");
             }
             else if (enemiesToDamage[i].GetComponent<SmallEnemy>() != null)
             {
                 enemiesToDamage[i].GetComponent<SmallEnemy>().TakeDamage(currentDamage);
-                print("SmallEnemy");
             } 
             else if (enemiesToDamage[i].GetComponent<Boss1Enemy>() != null)
             {
                 enemiesToDamage[i].GetComponent<Boss1Enemy>().TakeDamage(currentDamage);
-                print("Boss1Enemy");
             }
             else if (enemiesToDamage[i].GetComponent<Boss2Enemy>() != null)
             {
                 enemiesToDamage[i].GetComponent<Boss2Enemy>().TakeDamage(currentDamage);
-                print("Boss2Enemy");
             }
             else if (enemiesToDamage[i].GetComponent<Boss3Enemy>() != null)
             {
                 enemiesToDamage[i].GetComponent<Boss3Enemy>().TakeDamage(currentDamage);
-                print("Boss3Enemy");
             }
         }
     }

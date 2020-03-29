@@ -31,7 +31,7 @@ public class Slot : MonoBehaviour
             GameObject.Destroy(child.gameObject);
             inventory.isFull[selectedSlot] = false;
         }
-        inventory.GetTextInfo(selectedSlot);
+        //inventory.GetTextInfo(selectedSlot);
     }
     public string GetInfo()
     {
@@ -113,18 +113,6 @@ public class Slot : MonoBehaviour
 
     public void SwapItem(int selectedSlot)
     {
-        //копировать из 7 все в переменную..................
-        //удалить все из 7.........................
-        //переместить все из выбраного в 7.....................
-        //удалить все в выбраном...................
-        //перенести из переменной все в выбраное
-
-        /*переместить из 7 в временый...............
-         удалить 7............................
-         переместить из трансформа в 7..............
-         удалить в трансформу...........
-         переместить из временного в трансформ*/
-
         if (selectedSlot != 7)
         {
 

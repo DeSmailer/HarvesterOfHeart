@@ -22,7 +22,7 @@ public class Inventory : MonoBehaviour
     {
         inActive = true;
         selectedSlot = 0;
-        GetTextInfo(selectedSlot);
+        //GetTextInfo(selectedSlot);
     }
 
     private void Update()
@@ -34,7 +34,6 @@ public class Inventory : MonoBehaviour
                 for (int i = 0; i < slots.Length; i++)
                 {
                     slots[i].gameObject.SetActive(false);
-                    imageInfo.gameObject.SetActive(false);
                 }
                 inActive = false;
             }
@@ -43,7 +42,6 @@ public class Inventory : MonoBehaviour
                 for (int i = 0; i < slots.Length; i++)
                 {
                     slots[i].gameObject.SetActive(true);
-                    imageInfo.gameObject.SetActive(true);
 
                 }
                 inActive = true;
@@ -64,7 +62,7 @@ public class Inventory : MonoBehaviour
             else
             slots[selectedSlot].GetComponent<Image>().sprite = sprites[1];
             //отображение инфы
-            GetTextInfo(selectedSlot);
+            //GetTextInfo(selectedSlot);
         }
         if (Input.GetKeyUp("right"))
         {
@@ -81,42 +79,46 @@ public class Inventory : MonoBehaviour
             else
                 slots[selectedSlot].GetComponent<Image>().sprite = sprites[1];
             //отображение инфы
-            GetTextInfo(selectedSlot);
+            //GetTextInfo(selectedSlot);
         }
         if (Input.GetKeyUp("up"))
         {
-            if(inActive == true)
-            {
-                slots[selectedSlot].GetComponent<Slot>().DropItem(selectedSlot);
-                GetTextInfo(selectedSlot);
-            }
+            Up(selectedSlot);
         }
         //одеть\cнять итем
         if (Input.GetKeyUp("down"))
         {
-            if (inActive == true)
-            {
-                if(selectedSlot == 7)
-                {
-                    //если 7 занят и мы тыкаем то снять итем
-                    if(isFull[7])
-                    slots[selectedSlot].GetComponent<Slot>().PutOutItem(7);
-                    GetTextInfo(selectedSlot);
-                }
-                else
-                {
-                    slots[selectedSlot].GetComponent<Slot>().PutOnItem(selectedSlot);
-                    GetTextInfo(selectedSlot);
-                }
-                    
-            }
+            Down(selectedSlot);
         }
     }
-    public void GetTextInfo(int selectedSlot)
+    //public void GetTextInfo(int selectedSlot)
+    //{
+    //    var position = imageInfo.transform.position;
+    //    position.x = (slots[selectedSlot].transform.position.x + 95);
+    //    imageInfo.transform.position = position;
+    //    itemTextInfo.text = slots[selectedSlot].GetComponent<Slot>().GetInfo();
+    //}
+    public void Up(int selectedSlot)
     {
-        var position = imageInfo.transform.position;
-        position.x = (slots[selectedSlot].transform.position.x+95);
-        imageInfo.transform.position = position;
-        itemTextInfo.text = slots[selectedSlot].GetComponent<Slot>().GetInfo();
+        if (inActive == true)
+        {
+            slots[selectedSlot].GetComponent<Slot>().DropItem(selectedSlot);
+            //GetTextInfo(selectedSlot);
+        }
+    }
+    public void Down(int selectedSlot)
+    {
+        if (inActive == true)
+        {
+            if (selectedSlot == 7)
+            {
+                if (isFull[7])
+                    slots[selectedSlot].GetComponent<Slot>().PutOutItem(7);
+            }
+            else
+            {
+                slots[selectedSlot].GetComponent<Slot>().PutOnItem(selectedSlot);
+            }
+        }
     }
 }
