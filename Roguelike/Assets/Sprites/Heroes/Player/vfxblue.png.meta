@@ -1,7 +1,61 @@
 fileFormatVersion: 2
 guid: 5004d2170925d7b488444158bce2ac12
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2556367110903411233
+    second: vfxblue_0
+  - first:
+      213: 7289302217013778568
+    second: vfxblue_1
+  - first:
+      213: 8653367370995645982
+    second: vfxblue_2
+  - first:
+      213: 7331142803059772559
+    second: vfxblue_3
+  - first:
+      213: 6891173925931772286
+    second: vfxblue_4
+  - first:
+      213: -3797820043348283188
+    second: vfxblue_5
+  - first:
+      213: -6433554768778290705
+    second: vfxblue_6
+  - first:
+      213: -1416685701772820142
+    second: vfxblue_7
+  - first:
+      213: 4160716778524328714
+    second: vfxblue_8
+  - first:
+      213: 2562219707151197875
+    second: vfxblue_0
+  - first:
+      213: 4125423276078714389
+    second: vfxblue_1
+  - first:
+      213: 75303175130315939
+    second: vfxblue_2
+  - first:
+      213: -8862711299073670839
+    second: vfxblue_3
+  - first:
+      213: 7546276572392586973
+    second: vfxblue_4
+  - first:
+      213: 7117825212920669195
+    second: vfxblue_5
+  - first:
+      213: 5456584028894216864
+    second: vfxblue_6
+  - first:
+      213: 4757663576285802906
+    second: vfxblue_7
+  - first:
+      213: -1352577619559937831
+    second: vfxblue_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +94,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 570
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,9 +124,243 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: vfxblue_0
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 56
+        width: 359
+        height: 632
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6a0499f35de8320800000000000000
+      internalID: 2562219707151197875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxblue_1
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 162
+        width: 314
+        height: 478
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51eccc6bc92704930800000000000000
+      internalID: 4125423276078714389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxblue_2
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 154
+        width: 321
+        height: 495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acf91cb6d78b0100800000000000000
+      internalID: 75303175130315939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxblue_3
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 154
+        width: 281
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9418fd7b703510580800000000000000
+      internalID: -8862711299073670839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxblue_4
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 146
+        width: 291
+        height: 508
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddeff4a8f82c9b860800000000000000
+      internalID: 7546276572392586973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxblue_5
+      rect:
+        serializedVersion: 2
+        x: 2628
+        y: 130
+        width: 293
+        height: 539
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04a47db15897c260800000000000000
+      internalID: 7117825212920669195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxblue_6
+      rect:
+        serializedVersion: 2
+        x: 3152
+        y: 183
+        width: 260
+        height: 438
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a24f49934ea9bb40800000000000000
+      internalID: 5456584028894216864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxblue_7
+      rect:
+        serializedVersion: 2
+        x: 3620
+        y: 145
+        width: 302
+        height: 504
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a917451c0dd960240800000000000000
+      internalID: 4757663576285802906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxblue_8
+      rect:
+        serializedVersion: 2
+        x: 4048
+        y: 179
+        width: 272
+        height: 467
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0343fa9dd5ddb930800000000000000
+      internalID: 4160716778524328714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxblue_9
+      rect:
+        serializedVersion: 2
+        x: 4471
+        y: 658
+        width: 91
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d88cfe32ddaa3de0800000000000000
+      internalID: -1352577619559937831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -25,6 +25,9 @@ public class PlayerAttack : MonoBehaviour
     private Camera cam;
 
     Vector2 mousePoint;
+
+    public GameObject Center;
+    private Animator CenterAnim;
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
@@ -32,6 +35,7 @@ public class PlayerAttack : MonoBehaviour
         currentDamage = MaxDamage = currentMaxDamage;
         anim = GetComponent<Animator>();
         cam = Camera.main;
+        CenterAnim = Center.GetComponent<Animator>();
     }
 
     void Update()
@@ -81,10 +85,15 @@ public class PlayerAttack : MonoBehaviour
         if (timeForSoul > 0f)
         {
             timeForSoul -= Time.deltaTime;
+            CenterAnim.SetInteger("state", 2);
+
         }
         else
         {
             currentDamage = currentMaxDamage;
+            if (timeForSoul <= 0 && GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHP>().timeForScroll <= 0)
+                CenterAnim.SetInteger("state", 0);
+
         }
     }
     private void OnDrawGizmosSelected()
@@ -130,6 +139,7 @@ public class PlayerAttack : MonoBehaviour
                     {
                         currentDamage = currentMaxDamage * 1.25f;
                         timeForSoul = 15f;
+                        CenterAnim.SetInteger("state", 2);
                         inventory.isFull[i] = false;
                         foreach (Transform t in inventory.slots[i].transform)
                         {
@@ -156,6 +166,7 @@ public class PlayerAttack : MonoBehaviour
                 {
                     currentDamage = currentMaxDamage * 1.25f;
                     timeForSoul = 15f;
+                    CenterAnim.SetInteger("state", 2);
                     inventory.isFull[selSlot] = false;
                     foreach (Transform t in inventory.slots[selSlot].transform)
                     {

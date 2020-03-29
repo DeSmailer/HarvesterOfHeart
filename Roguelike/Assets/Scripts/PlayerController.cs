@@ -32,8 +32,8 @@ public LayerMask rollLayerMask;
 
     private PlayerHP playerHP;
 
-    
 
+    public GameObject Center;
     //Используем это для инициализации
     void Start()
     {
@@ -42,7 +42,6 @@ public LayerMask rollLayerMask;
         anim = GetComponent<Animator>();
         state = State.Normal;
         playerHP = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHP>();
-
     }
 
     private void Update()

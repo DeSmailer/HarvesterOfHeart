@@ -27,6 +27,9 @@ public class PlayerHP : MonoBehaviour
     private int changeColorTime = 5;
 
     public bool attackable;
+
+    public GameObject Center;
+    private Animator CenterAnim;
     void Start()
     {
         maxHP = 12f;
@@ -38,6 +41,7 @@ public class PlayerHP : MonoBehaviour
         color2 = new Color(255, 255, 255, 0f);
         fillImage.color = color1;
         attackable = true;
+        CenterAnim = Center.GetComponent<Animator>();
     }
 
     private void Update()
@@ -76,10 +80,13 @@ public class PlayerHP : MonoBehaviour
         if(timeForScroll > 0f)
         {
             timeForScroll -= Time.deltaTime;
+            CenterAnim.SetInteger("state", 3);
         }
         else
         {
             currentDamageRatio = currentMaxDamageRatio;
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttack>().timeForSoul <= 0 && timeForScroll <= 0)
+            CenterAnim.SetInteger("state", 0);
         }
     }
     //получение урона и снижение его под бафами свитка
@@ -106,6 +113,7 @@ public class PlayerHP : MonoBehaviour
                 if (inventory.slots[i].transform.GetChild(0).CompareTag("HealthPotion"))
                 {
                     currentHP += maxHP * 0.05f;
+                    CenterAnim.SetInteger("state", 1);
                     if (currentHP > currentMaxHP)
                     {
                         currentHP = currentMaxHP;
@@ -135,6 +143,7 @@ public class PlayerHP : MonoBehaviour
             if (inventory.slots[selSlot].transform.GetChild(0).CompareTag("HealthPotion"))
             {
                 currentHP += maxHP * 0.05f;
+                CenterAnim.SetInteger("state", 1);
                 if (currentHP > currentMaxHP)
                 {
                     currentHP = currentMaxHP;
@@ -179,6 +188,7 @@ public class PlayerHP : MonoBehaviour
                     {
                         currentDamageRatio = currentMaxDamageRatio * 0.75f;
                         timeForScroll = 15f;
+                        CenterAnim.SetInteger("state", 3);
                         inventory.isFull[i] = false;
                         foreach (Transform t in inventory.slots[i].transform)
                         {
@@ -206,6 +216,7 @@ public class PlayerHP : MonoBehaviour
                 {
                     currentDamageRatio = currentMaxDamageRatio * 0.75f;
                     timeForScroll = 15f;
+                    CenterAnim.SetInteger("state", 3);
                     inventory.isFull[selSlot] = false;
                     foreach (Transform t in inventory.slots[selSlot].transform)
                     {
@@ -297,5 +308,9 @@ public class PlayerHP : MonoBehaviour
             currentHP = currentMaxHP;
         }
         DisplayHP();
+    }
+    public void SetNonBuffAnimation()
+    {
+        CenterAnim.SetInteger("state", 0);
     }
 }

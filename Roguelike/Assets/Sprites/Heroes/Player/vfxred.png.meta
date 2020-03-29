@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: d875ebb1424c9cb47b0db4179f707e0e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1865693730754034823
+    second: vfxred_0
+  - first:
+      213: -1900542807631455790
+    second: vfxred_1
+  - first:
+      213: -6230193015013097373
+    second: vfxred_2
+  - first:
+      213: 4980571439702563810
+    second: vfxred_3
+  - first:
+      213: 1663264533547238617
+    second: vfxred_4
+  - first:
+      213: -3649118396990011363
+    second: vfxred_5
+  - first:
+      213: -9088541160737000357
+    second: vfxred_6
+  - first:
+      213: -7246717037171090749
+    second: vfxred_7
+  - first:
+      213: -7115229582734214923
+    second: vfxred_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +67,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 570
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,9 +97,222 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: vfxred_0
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 56
+        width: 359
+        height: 632
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c7441309644e910800000000000000
+      internalID: 1865693730754034823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxred_1
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 162
+        width: 314
+        height: 478
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d914bec26aef95e0800000000000000
+      internalID: -1900542807631455790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxred_2
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 154
+        width: 321
+        height: 495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360460a3678e989a0800000000000000
+      internalID: -6230193015013097373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxred_3
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 154
+        width: 281
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb5de1165b8e1540800000000000000
+      internalID: 4980571439702563810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxred_4
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 146
+        width: 291
+        height: 508
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4c699e74a151710800000000000000
+      internalID: 1663264533547238617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxred_5
+      rect:
+        serializedVersion: 2
+        x: 2628
+        y: 130
+        width: 293
+        height: 539
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18411cd62abb5dc0800000000000000
+      internalID: -3649118396990011363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxred_6
+      rect:
+        serializedVersion: 2
+        x: 3152
+        y: 183
+        width: 260
+        height: 438
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5431cba7f30fd180800000000000000
+      internalID: -9088541160737000357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxred_7
+      rect:
+        serializedVersion: 2
+        x: 3620
+        y: 145
+        width: 302
+        height: 504
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca55abdf3d7e6b90800000000000000
+      internalID: -7246717037171090749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfxred_8
+      rect:
+        serializedVersion: 2
+        x: 4048
+        y: 179
+        width: 272
+        height: 466
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8b6c18460a14d90800000000000000
+      internalID: -7115229582734214923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
