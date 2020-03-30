@@ -16,6 +16,7 @@ public class IntoMainMenu : MonoBehaviour
         AmuletBuff.YdropCount = 0;
         AmuletBuff.countDeadMobs = 0;
         AmuletBuff.SetBuff(0, 0, 1);
+
     }
     // Update is called once per frame
     void Update()

@@ -10,7 +10,8 @@ public class BigWomenBeam : MonoBehaviour
     private float timeBtwDamage;
     private bool right;
     public float speed;
-    // Start is called before the first frame update
+    public AudioClip[] clips;
+    AudioSource audioSource;
     void Start()
     {
         damage = 5 * LevelGenerator.LVL;
@@ -20,6 +21,12 @@ public class BigWomenBeam : MonoBehaviour
         if (r < 1)
             right = false;
         else right = true;
+
+        audioSource = GetComponent<AudioSource>();
+
+        audioSource.clip = clips[0];
+        print(audioSource.clip);
+        audioSource.Play();
     }
     private void FixedUpdate()
     {

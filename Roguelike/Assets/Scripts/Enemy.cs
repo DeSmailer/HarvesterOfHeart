@@ -38,6 +38,8 @@ public class Enemy : MonoBehaviour
     public Animator anim;
     //пепел после смерти
     public GameObject deathEffect;
+    public AudioClip[] clips;
+    AudioSource audioSource;
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -66,6 +68,9 @@ public class Enemy : MonoBehaviour
         speed = UnityEngine.Random.Range(1f, 2f);
 
         anim = GetComponent<Animator>();
+
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     void Update()
@@ -213,17 +218,11 @@ public class Enemy : MonoBehaviour
             //атака
             if (PathToTarget.Count == 0 || PathToTarget.Count == 1)
             {
-
-                //if (Vector2.Distance(transform.position, PathToTarget[PathToTarget.Count - 1]) >= attackRange)
-                //{
-                //    transform.Translate(Player.transform.position, Space.World);
-                //    return;
-                //}
-                //else
-                //{
-                
                 if (timeBtwAttac <= 0)
                 {
+                    audioSource.clip = clips[0];
+                    print(audioSource.clip);
+                    audioSource.Play();
                     if (Player.transform.position.x - transform.position.x < 0)
                     {
                         anim.SetInteger("state", 4);

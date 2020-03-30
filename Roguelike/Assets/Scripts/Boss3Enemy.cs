@@ -36,6 +36,8 @@ public class Boss3Enemy : MonoBehaviour
     //анимации
     public Animator anim;
     private LevelGenerator levelGenerator;
+    public AudioClip[] clips;
+    AudioSource audioSource;
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -53,6 +55,7 @@ public class Boss3Enemy : MonoBehaviour
         DisplayHP();
         anim = GetComponent<Animator>();
         levelGenerator = GameObject.FindGameObjectWithTag("levelGenerator").GetComponent<LevelGenerator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -99,13 +102,10 @@ public class Boss3Enemy : MonoBehaviour
             timeToSplashAttack += Time.deltaTime;
             if (timeToSplashAttack >= startTimeToSplashAttack)
             {
+                audioSource.clip = clips[1];
+                print(audioSource.clip);
+                audioSource.Play();
                 anim.SetInteger("state", 4);
-                //GameObject player = GameObject.FindGameObjectWithTag("Player");
-                //SplashShoot(new Vector2(player.transform.position.x - splashAttackPositiont.transform.position.x, player.transform.position.y - splashAttackPositiont.transform.position.y)*4);
-                ////player.GetComponent<Rigidbody2D>().AddForce(new Vector2(player.transform.position.x - splashAttackPositiont.transform.position.x, player.transform.position.y - splashAttackPositiont.transform.position.y)*3000);                              
-                //////anim.SetInteger("state", 2);
-                ////timeToSplashAttack = 0;
-                //print($"BOOM отталкнул {new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y - transform.position.y)*20}");
             }
         }
         else
@@ -135,6 +135,9 @@ public class Boss3Enemy : MonoBehaviour
     }
     public void Shoot()
     {
+        audioSource.clip = clips[0];
+        print(audioSource.clip);
+        audioSource.Play();
         //полы от 3 до 11 во все стороны
         Instantiate(SpawnMob, new Vector3(Random.Range((int)3, (int)11), Random.Range((int)3, (int)11), -95), Quaternion.identity);
         levelGenerator.MobCountOnLvl++;

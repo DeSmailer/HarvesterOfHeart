@@ -46,6 +46,8 @@ public class LevelGenerator : MonoBehaviour
     public float MenorahSpawnRange;
     public LayerMask whatIsMenorah;
 
+    public AudioClip[] clips;
+    AudioSource audioSource;
     public void Start()
     {
 
@@ -61,6 +63,10 @@ public class LevelGenerator : MonoBehaviour
         }
         SpawnMob();
         SpawnMenorah();
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = clips[0];
+        print(audioSource.clip);
+        audioSource.Play();
     }
     void Setup()
     {

@@ -8,7 +8,6 @@ public class UseBAmulet : MonoBehaviour
     {
         int selectedSlot = gameObject.GetComponentInParent<Slot>().number;
         selectedSlot = gameObject.GetComponentInParent<Slot>().number;
-        print(selectedSlot);
         GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>().Down(selectedSlot);
     }
     public void Drop()

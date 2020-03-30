@@ -10,10 +10,13 @@ public class PickUp : MonoBehaviour
 
     public string type;
 
+    public AudioClip[] clips;
+    AudioSource audioSource;
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
         StartCoroutine(Drop());
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -23,6 +26,9 @@ public class PickUp : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
+                audioSource.clip = clips[0];
+                print(audioSource.clip);
+                audioSource.Play();
                 if (type == "consumable")
                 {
                     for (int i = 0; i < inventory.slots.Length - 1; i++)

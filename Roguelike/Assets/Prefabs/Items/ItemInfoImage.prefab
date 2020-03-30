@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1111.6001, y: 210.40005}
+  m_AnchoredPosition: {x: 925.6, y: 210.40002}
   m_SizeDelta: {x: 118.08, y: 48.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1900766665923897556
@@ -154,7 +154,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Soul\n+25% Attack\n2 - \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\t"
+  m_Text: "Scroll\n+25% Defense\n3 - \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C"
 --- !u!1001 &2153325076649039663
 PrefabInstance:
   m_ObjectHideFlags: 0

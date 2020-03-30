@@ -8,9 +8,15 @@ public class SpawnItem : MonoBehaviour
     private Transform player;
     //public int slotNumber;
     public string type;
+    public AudioClip[] clips;
+    AudioSource audioSource;
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = clips[0];
+        print(audioSource.clip);
+        audioSource.Play();
     }
     public void SpawnDroppedItem()
     {

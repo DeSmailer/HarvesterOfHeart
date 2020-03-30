@@ -29,7 +29,8 @@ public class Boss2Enemy : MonoBehaviour
     private int shootCount;
     //что дропает
     public GameObject HealthPotion, Scroll, Soull, GAmulet, BAmulet, YAmulet;
-    
+    public AudioClip[] clips;
+    AudioSource audioSource;
     //анимации
     public Animator anim;
     void Start()
@@ -38,13 +39,18 @@ public class Boss2Enemy : MonoBehaviour
         DisplayHP();
         shootCount = startShootCount;
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
+           
 
 
     void Update()
     {
         if (timeBtwAttac <= 0)
         {
+            audioSource.clip = clips[0];
+            print(audioSource.clip);
+            audioSource.Play();
             anim.SetInteger("state", 1);
             Shoot();
             SetStartTime();
@@ -61,6 +67,9 @@ public class Boss2Enemy : MonoBehaviour
             {
                 if (timeBtwPowerAttacShoot <= 0)
                 {
+                    audioSource.clip = clips[0];
+                    print(audioSource.clip);
+                    audioSource.Play();
                     anim.SetInteger("state", 2);
                 }
                 else

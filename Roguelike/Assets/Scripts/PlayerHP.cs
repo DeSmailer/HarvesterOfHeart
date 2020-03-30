@@ -30,10 +30,18 @@ public class PlayerHP : MonoBehaviour
 
     public GameObject Center;
     private Animator CenterAnim;
+    private SpriteRenderer spriteRenderer;
+    private bool isRed;
+    private float redVariable;
+    public AudioClip[] clips;
+    AudioSource audioSource;
+    private bool isPlayedHP = false;
+    private bool isPlayedScroll = false;
+
     void Start()
     {
         maxHP = 12f;
-        currentHP  = currentMaxHP = maxHP;
+        currentHP = currentMaxHP = maxHP;
         maxDamageRatio = currentMaxDamageRatio = 1;
         DisplayHP();
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
@@ -42,6 +50,10 @@ public class PlayerHP : MonoBehaviour
         fillImage.color = color1;
         attackable = true;
         CenterAnim = Center.GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        isRed = false;
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     private void Update()
@@ -65,40 +77,60 @@ public class PlayerHP : MonoBehaviour
                 changeColorTime--;
             }
         }
-        if (Input.GetKeyUp("1")) 
+        if (Input.GetKeyUp("1"))
         {
             UseHPPotion();
         }
         if (Input.GetKeyUp("3"))
         {
-                UseScroll();
+            UseScroll();
         }
+        ChangeColor();
     }
 
     private void FixedUpdate()
     {
-        if(timeForScroll > 0f)
+        if (timeForScroll > 0f)
         {
             timeForScroll -= Time.deltaTime;
             CenterAnim.SetInteger("state", 3);
+            if (!isPlayedScroll)
+            {
+                audioSource.clip = clips[1];
+                print(audioSource.clip);
+                audioSource.Play();
+                isPlayedScroll = true;
+            }
         }
         else
         {
             currentDamageRatio = currentMaxDamageRatio;
-        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttack>().timeForSoul <= 0 && timeForScroll <= 0)
-            CenterAnim.SetInteger("state", 0);
+            if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttack>().timeForSoul <= 0 && timeForScroll <= 0)
+                CenterAnim.SetInteger("state", 0);
+        }
+        if (!isPlayedHP)
+        {
+            audioSource.clip = clips[0];
+            print(audioSource.clip);
+            audioSource.Play();
+            isPlayedHP = true;
         }
     }
     //получение урона и снижение его под бафами свитка
     public void TakingDamage(float damage)
     {
+        print(attackable);
         if (attackable)
         {
             currentHP = currentHP - damage * currentDamageRatio;
             DisplayHP();
+            isRed = true;
+            print(isRed);
+            redVariable = 1.5f;
+            print(redVariable);
             if (currentHP <= 0)
             {
-                //SceneManager.LoadScene("OnLoseScene");
+                SceneManager.LoadScene("OnLoseScene");
             }
         }
     }
@@ -108,7 +140,7 @@ public class PlayerHP : MonoBehaviour
     {
         for (int i = 0; i < inventory.slots.Length; i++) //inventory.slots.Length
         {
-            if(inventory.slots[i].transform.childCount > 0)
+            if (inventory.slots[i].transform.childCount > 0)
             {
                 if (inventory.slots[i].transform.GetChild(0).CompareTag("HealthPotion"))
                 {
@@ -118,6 +150,7 @@ public class PlayerHP : MonoBehaviour
                     {
                         currentHP = currentMaxHP;
                     }
+                    isPlayedHP = false;
                     DisplayHP();
                     inventory.isFull[i] = false;
                     foreach (Transform t in inventory.slots[i].transform)
@@ -132,7 +165,7 @@ public class PlayerHP : MonoBehaviour
             {
                 continue;
             }
-            
+
         }
         DisplayHP();
     }
@@ -148,6 +181,7 @@ public class PlayerHP : MonoBehaviour
                 {
                     currentHP = currentMaxHP;
                 }
+                isPlayedHP = false;
                 DisplayHP();
                 inventory.isFull[selSlot] = false;
                 foreach (Transform t in inventory.slots[selSlot].transform)
@@ -190,6 +224,7 @@ public class PlayerHP : MonoBehaviour
                         timeForScroll = 15f;
                         CenterAnim.SetInteger("state", 3);
                         inventory.isFull[i] = false;
+                        isPlayedScroll = false;
                         foreach (Transform t in inventory.slots[i].transform)
                         {
                             Destroy(t.gameObject);
@@ -217,6 +252,7 @@ public class PlayerHP : MonoBehaviour
                     currentDamageRatio = currentMaxDamageRatio * 0.75f;
                     timeForScroll = 15f;
                     CenterAnim.SetInteger("state", 3);
+                    isPlayedScroll = false;
                     inventory.isFull[selSlot] = false;
                     foreach (Transform t in inventory.slots[selSlot].transform)
                     {
@@ -225,14 +261,14 @@ public class PlayerHP : MonoBehaviour
                 }
             }
         }
-    }        
-    
+    }
+
 
     private void DisplayHP()
     {
         float HPSlider = currentHP / currentMaxHP;
 
-        if(HPSlider < 100)
+        if (HPSlider < 100)
         {
             if (HPSlider > 0.51f && HPSlider < 0.90f)
             {
@@ -313,4 +349,21 @@ public class PlayerHP : MonoBehaviour
     {
         CenterAnim.SetInteger("state", 0);
     }
+   private void ChangeColor()
+    {
+        if (isRed)
+        {
+            if (redVariable >=1)
+            {
+                redVariable -= 0.03f;
+                spriteRenderer.color = new Color(1f, 1f / redVariable,1f / redVariable, 1f);
+            }
+            else
+            {
+                isRed = false;
+            }
+                
+        }
+    }
 }
+

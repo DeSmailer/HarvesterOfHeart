@@ -27,6 +27,8 @@ public class SmallEnemy : MonoBehaviour
     public Animator anim;
     //пепел после смерти
     public GameObject deathEffect;
+    public AudioClip[] clips;
+    AudioSource audioSource;
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -42,6 +44,8 @@ public class SmallEnemy : MonoBehaviour
         speed = UnityEngine.Random.Range(1f, 2f);
 
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     void Update()
@@ -113,15 +117,15 @@ public class SmallEnemy : MonoBehaviour
             {
                 if (timeBtwAttac <= 0)
                 {
-                    print("должна быть атака");
+                    audioSource.clip = clips[0];
+                    print(audioSource.clip);
+                    audioSource.Play();
                     if (Player.transform.position.x - transform.position.x < 0)
                     {
-                        print("1");
                         anim.SetInteger("state", 4);
                     }
                     else if (Player.transform.position.x - transform.position.x >= 0)
                     {
-                        print("2");
                         anim.SetInteger("state", 3);
                     }
                 }

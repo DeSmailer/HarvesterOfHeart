@@ -28,6 +28,9 @@ public class PlayerAttack : MonoBehaviour
 
     public GameObject Center;
     private Animator CenterAnim;
+    private bool isPlayed = false;
+    public AudioClip[] clips;
+    AudioSource audioSource;
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
@@ -36,6 +39,8 @@ public class PlayerAttack : MonoBehaviour
         anim = GetComponent<Animator>();
         cam = Camera.main;
         CenterAnim = Center.GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     void Update()
@@ -57,13 +62,13 @@ public class PlayerAttack : MonoBehaviour
                         anim.SetInteger("state", 4);
                         break;
                     case 2:
-                        anim.SetInteger("state", 9);//3
+                        anim.SetInteger("state", 9);
                         break;
                     case 3:
                         anim.SetInteger("state", 3);
                         break;
                     case 4:
-                        anim.SetInteger("state", 3);
+                        anim.SetInteger("state", 25);
                         break;
                     default:
                         anim.SetInteger("state", 3);
@@ -86,7 +91,13 @@ public class PlayerAttack : MonoBehaviour
         {
             timeForSoul -= Time.deltaTime;
             CenterAnim.SetInteger("state", 2);
-
+            if (!isPlayed)
+            {
+                audioSource.clip = clips[0];
+                print(audioSource.clip);
+                audioSource.Play();
+                isPlayed = true;
+            }
         }
         else
         {
@@ -141,6 +152,7 @@ public class PlayerAttack : MonoBehaviour
                         timeForSoul = 15f;
                         CenterAnim.SetInteger("state", 2);
                         inventory.isFull[i] = false;
+                        isPlayed = false;
                         foreach (Transform t in inventory.slots[i].transform)
                         {
                             Destroy(t.gameObject);
@@ -168,6 +180,7 @@ public class PlayerAttack : MonoBehaviour
                     timeForSoul = 15f;
                     CenterAnim.SetInteger("state", 2);
                     inventory.isFull[selSlot] = false;
+                    isPlayed = false;
                     foreach (Transform t in inventory.slots[selSlot].transform)
                     {
                         Destroy(t.gameObject);
@@ -199,6 +212,9 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack1()
     {
+        audioSource.clip = clips[1];
+        print(audioSource.clip);
+        audioSource.Play();
         Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
         for (int i = 0; i < enemiesToDamage.Length; i++)
         {
